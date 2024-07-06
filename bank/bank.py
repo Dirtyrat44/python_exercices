@@ -4,7 +4,7 @@ def main():
 
 
 def money(text):
-    text.strip().lower().replace(",", " ")
+    text = text.strip().lower().replace(",", " ")
     word = text.split(" ", 1)[0]
     if word == "hello":
         return "0"
