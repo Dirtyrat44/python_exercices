@@ -1,2 +1,2 @@
 mass = int(input("Enter a mass : "))
-print(mass * 300000000)
+print(mass * 300000000.pow())
