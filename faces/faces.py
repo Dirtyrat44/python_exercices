@@ -4,6 +4,7 @@ def main()
 
 
 def convert(message)
+    return message.replace(":)", "🙂").replace(":(", "🙁"))
 
 
 
