@@ -4,7 +4,8 @@ def main():
 
 
 def money(text):
-    word = text.lower().replace(",", " ").split(" ", 1)
+    text.lower().replace(",", " ")
+    word = text.split(" ", 1)[0]
     if word == "hello":
         return "0"
     elif word.startswith("h"):
