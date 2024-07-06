@@ -8,7 +8,7 @@ def money(text):
     word = text.split(" ", 1)[0]
     if word == "hello":
         return "0"
-    elif word.startswith("h" or "H"):
+    elif word.startswith("h"):
         return "20"
     else:
         return "100"
