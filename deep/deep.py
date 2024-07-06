@@ -1,6 +1,6 @@
 def main():
     message = input("What is the Answer to the Great Question of Life, the Universe, and Everything?")
-    if is_correct(message.lower()):
+    if is_correct(message.lower().strip()):
         print("Yes")
     else:
         print("No")
