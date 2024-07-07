@@ -6,10 +6,10 @@ def camelCase(t):
     text = []
     for s in range(len(t)):
         if t[s].isupper():
-            text = t[s].lower()
+            text.append(t[s].lower())
             text[s].insert(text[s - 1], " ")
         else:
-            text = t[s]
+            text.append(t[s])
 
     return text
 
