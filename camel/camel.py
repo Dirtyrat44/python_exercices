@@ -1,7 +1,8 @@
 def main():
     user_input = input("camelCase: ")
     output = camelCase(user_input)
-    print(output).replace(" ", "_")
+    for text in output:
+        print(text, sep="", end="")
 
 def camelCase(t):
     text = []
