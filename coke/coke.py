@@ -1,10 +1,10 @@
 def main():
     amount = 50
-    
+
     while amount_due != 0:
-        amount_due(amount)
-        user_input = input("Insert Coin: ")
         while True:
+            amount_due(amount)
+            user_input = input("Insert Coin: ")
             if user_input == 25:
                 return amount - 25
             elif user_input == 10:
@@ -12,7 +12,7 @@ def main():
             elif user_input == 5:
                 return amount - 5
             else:
-                return True
+                True
 
 
 
