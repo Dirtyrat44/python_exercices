@@ -4,11 +4,12 @@ def main():
 
 def camelCase(t):
     for s in range(len(t)):
-        if s.isupper():
-            s = t[s].upper()
+        
+        if t[s].isupper():
+            text = t[s].upper()
             t[s].insert([s - 1], " ")
 
-    return t
+    return text
 
 
 
