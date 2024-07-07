@@ -10,8 +10,9 @@ def main():
             amount -= 10
         elif user_input == 5:
             amount -= 5
-        else:
-            True
+
+    print(f"Change Owed: {amount * -1}")
+
 
 
 
