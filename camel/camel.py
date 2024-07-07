@@ -4,7 +4,8 @@ def main():
 
 def camelCase(t):
     for s in t:
-        if 
+        if s.isupper():
+            s = upper(s)
 
 
 
