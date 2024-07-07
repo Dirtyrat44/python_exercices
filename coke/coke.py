@@ -13,6 +13,8 @@ def main():
                 return amount - 5
             else:
                 True
+            if amount == 0:
+                break
 
 
 
