@@ -1,19 +1,18 @@
 def main():
     user_input = input("camelCase: ")
-    print(camelCase(user_input))
+    print(camel_to_case(user_input))
 
-def camelCase(t):
-    text = []
-    for s in range(len(t)):
-        if t[s].isupper():
-            text.append("_")
-            text.append(t[s].lower())
 
+def camel_to_case(text):
+    new_str = []
+    for char in text:
+        if char.isupper():
+            new_str.append("_")
+            new_str.append(char.lower())
         else:
-            text.append(t[s])
+            new_str.append(char)
 
-    return "".join(text)
-
+    return "".join(new_str)
 
 
 
