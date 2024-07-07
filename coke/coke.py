@@ -16,11 +16,6 @@ def main():
 
 
 
-
-
-
-
-
 def amount_due(n):
     print(f"Amount Due: {n}")
 
