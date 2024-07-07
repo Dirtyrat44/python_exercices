@@ -3,6 +3,7 @@ def main():
     output = camelCase(user_input)
     for text in output:
         print(text, sep="", end="")
+        print()
 
 def camelCase(t):
     text = []
