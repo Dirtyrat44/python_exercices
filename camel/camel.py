@@ -1,9 +1,6 @@
 def main():
     user_input = input("camelCase: ")
-    output = camelCase(user_input)
-    for text in output:
-        print(text, sep="", end="")
-    print()
+    print(camelCase(user_input).replace(" ", "_"))
 
 def camelCase(t):
     text = []
@@ -15,7 +12,7 @@ def camelCase(t):
         else:
             text.append(t[s])
 
-    return text
+    return "".join(text)
 
 
 
