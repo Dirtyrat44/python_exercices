@@ -4,7 +4,7 @@ def main():
 
 def camelCase(t):
     for s in t:
-        
+        if 
 
 
 
