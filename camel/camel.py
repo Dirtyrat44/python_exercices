@@ -1,6 +1,6 @@
 def main():
     user_input = input("camelCase: ")
-    print(camelCase(user_input)
+    print(camelCase(user_input))
 
 def camelCase(t):
     text = []
