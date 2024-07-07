@@ -1,7 +1,7 @@
 def main():
     amount = 50
 
-    while amount != 0:
+    while amount != 0 or amount < 0:
         amount_due(amount)
         user_input = int(input("Insert Coin: "))
         if user_input == 25:
