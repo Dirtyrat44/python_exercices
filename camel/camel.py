@@ -3,12 +3,13 @@ def main():
     print(camelCase(user_input))
 
 def camelCase(t):
-    text = ""
+    text = []
     for s in range(len(t)):
-        text = t[s]
         if t[s].isupper():
             text = t[s].upper()
             text[s].insert([s - 1], " ")
+        else:
+            text = t[s]
 
     return text
 
