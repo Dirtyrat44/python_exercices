@@ -1,11 +1,14 @@
 def main():
     user_input = input("camelCase: ")
-    camelCalse(user_input)
+    print(camelCase(user_input))
 
 def camelCase(t):
     for s in t:
         if s.isupper():
-            s = upper(s)
+            s = s.upper()
+            s.insert([s - 1], " ")
+
+    return s
 
 
 
