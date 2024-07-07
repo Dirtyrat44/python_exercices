@@ -5,8 +5,8 @@ def main():
 def camelCase(t):
     for s in range(len(t)):
         if s.isupper():
-            s = s.upper()
-            s.insert([s - 1], " ")
+            s = t[s].upper()
+            t[s].insert([s - 1], " ")
 
     return t
 
