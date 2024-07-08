@@ -7,6 +7,11 @@ def vowels_eraser(str):
     new_str = []
     for c in str:
         if c.lower() in ["a", "e", "i", "o", "u"]:
+            pass
+        else:
+            new_str.append(c)
+
+    return "".join(new_str)
 
 
 
