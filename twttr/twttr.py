@@ -1,6 +1,6 @@
 def main():
     user_input = input("Input: ")
-    print(vowel_eraser(user_input))
+    print("Output:", vowel_eraser(user_input))
 
 # Function to erase any vowels
 def vowel_eraser(str):
