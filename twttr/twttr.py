@@ -4,7 +4,7 @@ def main():
 
 # Function to erase any vowels
 def vowel_eraser(str):
-    return "".join([c for c in str.lower() not in ["a", "e", "i", "o", "u"]])
+    return "".join([c for c in str if c.lower() not in ["a", "e", "i", "o", "u"]])
 
 
 
