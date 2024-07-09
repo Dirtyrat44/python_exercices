@@ -8,7 +8,10 @@ def main():
 
 def is_valid(s):
     new_s = []
-    
+    if len(s) >= 2 and len(s) <= 6:
+        if s[0:2].isalpha():
+             
+
 
 
 # améliorations : Séparer la chaine au premier numéro rencontré pour vérifier si il ne commence pas par 0 et si il y a des numéros jusqu'à la fin
