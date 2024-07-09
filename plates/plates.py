@@ -7,7 +7,16 @@ def main():
 
 
 def is_valid(s):
-    if len(s) >= 2 and len(s) <= 6:
+    new_s = []
+    
+
+
+# améliorations : Séparer la chaine au premier numéro rencontré pour vérifier si il ne commence pas par 0 et si il y a des numéros jusqu'à la fin
+# valider aussi si la chaine n'a pas de numéro mais qu'elle >=2 ou <= 6
+# chaine only isdigit() or isalpha()
+
+main()
+if len(s) >= 2 and len(s) <= 6:
         if s[0:2].isalpha():
             if s[-1].isdigit():
                  return True
@@ -18,8 +27,3 @@ def is_valid(s):
             return False
     else:
             return False
-# améliorations : Séparer la chaine au premier numéro rencontré pour vérifier si il ne commence pas par 0 et si il y a des numéros jusqu'à la fin
-# valider aussi si la chaine n'a pas de numéro mais qu'elle >=2 ou <= 6
-# chaine only isdigit() or isalpha()
-
-main()
