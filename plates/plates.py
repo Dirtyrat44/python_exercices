@@ -8,7 +8,7 @@ def main():
 
 def is_valid(s):
     if len(s) >= 2 and len(s) <= 6:
-        if s[0, 2].isalpha():
+        if s[0:2].isalpha():
             if s[-1].isdigit():
                  return True
             else:
