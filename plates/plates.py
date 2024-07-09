@@ -7,7 +7,7 @@ def main():
 
 
 def is_valid(s):
-    if range(s) >= 2 and range(s) <= 6:
+    if len(s) >= 2 and len(s) <= 6:
         if s[0, 2].isalpha():
             if s[-1].isdigit():
                  return True
