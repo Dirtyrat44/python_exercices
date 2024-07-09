@@ -21,8 +21,11 @@ def is_valid(s):
              return False
     else:
          return False
-    for d in new_str if d.isdigit() and d[0] != 0 return True else: return False
-         
+    for d in new_s:
+         if d.isdigit() and d[0] != 0:
+            return True
+         else:
+             return False
 
 
 
