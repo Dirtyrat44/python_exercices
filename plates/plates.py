@@ -7,11 +7,14 @@ def main():
 
 
 def is_valid(s):
-    if s[0, 2].isalpha():
-        d
+    if range(s) >= 2 and range(s) <= 6:
+        if s[0, 2].isalpha():
+            d
 
+        else:
+            return False
     else:
-        return False
+            return False
 
 
 main()
