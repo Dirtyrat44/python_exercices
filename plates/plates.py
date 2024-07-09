@@ -12,7 +12,13 @@ def is_valid(s):
         if s[0:2].isalpha():
              for c in s:
                   if c.isdigit():
-                       
+                    new_s.append(c)
+        else:
+             return False
+    else:
+         return False
+    if new_s.isdigit() and new_s[0] != 0:
+         return True
 
 
 
@@ -21,14 +27,4 @@ def is_valid(s):
 # chaine only isdigit() or isalpha()
 
 main()
-if len(s) >= 2 and len(s) <= 6:
-        if s[0:2].isalpha():
-            if s[-1].isdigit():
-                 return True
-            else:
-                 return False
 
-        else:
-            return False
-    else:
-            return False
