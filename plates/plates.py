@@ -11,7 +11,8 @@ def is_valid(s):
     if len(s) >= 2 and len(s) <= 6:
         if s[0:2].isalpha():
              for c in s:
-                  
+                  if c.isdigit():
+                       
 
 
 
