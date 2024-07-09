@@ -21,7 +21,7 @@ def is_valid(s):
              return False
     else:
          return False
-    if new_s.isdigit() and new_s[0] != 0:
+    for d in new_str if d.isdigit() and d[0] != 0 return True else: return False
          return True
 
 
