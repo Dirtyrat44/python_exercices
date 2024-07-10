@@ -16,7 +16,7 @@ def is_valid(s):
                     return False
                 else:
                     return True
-            
+
 
     else:
         return False
