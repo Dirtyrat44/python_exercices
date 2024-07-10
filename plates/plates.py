@@ -24,10 +24,6 @@ def is_valid(s):
 
 
 
-# améliorations : Séparer la chaine au premier numéro rencontré pour vérifier si il ne commence pas par 0 et si il y a des numéros jusqu'à la fin
-# valider aussi si la chaine n'a pas de numéro mais qu'elle >=2 ou <= 6
-# chaine only isdigit() or isalpha()
-
 main()
 
 
