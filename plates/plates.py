@@ -19,8 +19,7 @@ def is_valid(s):
             break
         if not digit_seen:
             return True
-        else:
-            return False
+        return digit_seen
 
 
 
