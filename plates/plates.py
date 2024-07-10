@@ -9,7 +9,7 @@ def main():
 def is_valid(s):
     new_s = []
     new_s_digit = []
-    if s[0:2].isalpha() and 6 <= len(s) > 1 and c not in [".", " ", "'"]:
+    if s[0:2].isalpha() and 6 >= len(s) > 1 and s not in [".", " ", "'"]:
         for c in s:
             new_s.append(c)
 
