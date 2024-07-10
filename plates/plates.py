@@ -16,9 +16,12 @@ def is_valid(s):
                 digit_seen = True
                 if c == "0" or not s[i:].isdigit():
                     return False
-                else:
-                    return True
-        
+            break
+        if not digit_seen:
+            return True
+        else:
+            return False
+
 
 
     else:
