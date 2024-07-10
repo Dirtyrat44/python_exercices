@@ -8,11 +8,12 @@ def main():
 
 def is_valid(s):
     new_s = []
-    if s[0:2].isalpha() and 6 < len(s) > 2:
+    new_s_digit = []
+    if s[0:2].isalpha() and 6 <= len(s) > 1 and :
+        for c in s:
+            new_s.append(c)
 
 
-    else:
-        return False
 
 
 
