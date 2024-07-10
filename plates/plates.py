@@ -14,8 +14,12 @@ def is_valid(s):
         for c in s:
             if c.isdigit():
                 new_s.append(c)
-        if new_s[0:1] == "0" and is not new_s.isdigit():
+        if new_s[0:1] == "0" and not new_s.isdigit():
             return False
+        else:
+            return True
+    else:
+        return False
 
 
 
