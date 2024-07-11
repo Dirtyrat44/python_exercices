@@ -24,7 +24,7 @@ fruits_calories = {
 
 def main():
     user_input = input("Item: ")
-    print("Calories:")
+    print(f"Calories: {fruits_calories[names]}")
 
 
 
