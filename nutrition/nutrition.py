@@ -25,6 +25,8 @@ fruits_calories = {
 def calories(t):
     if t in fruits_calories:
         return fruits_calories[t]
+    else:
+        return ""
 
 def main():
     user_input = input("Item: ")
