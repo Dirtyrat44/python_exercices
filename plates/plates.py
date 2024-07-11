@@ -7,8 +7,9 @@ def main():
 
 
 def is_valid(s):
-    if s[0:2].isalpha() and 1 < len(s) >= 6 and all(c not in [" ", "'", "."] for c in s):
+    if s[0:2].isalpha() and 1 < len(s) < 7 and all(c not in [" ", ",", ".", "'"] for c in s):
         
+
 
 
 
