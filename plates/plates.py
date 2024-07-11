@@ -8,7 +8,9 @@ def main():
 
 def is_valid(s):
     if s[0:2].isalpha() and 1 < len(s) < 7 and all(c not in [" ", ",", ".", "'"] for c in s):
-        
+        for i, c in enumerate(s):
+            if c.isdigit():
+                
 
 
 
