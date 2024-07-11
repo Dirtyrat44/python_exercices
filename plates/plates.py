@@ -11,10 +11,9 @@ def is_valid(s):
         is_digit = False
         for i, c in enumerate(s, start=2):
             if c.isdigit():
-                if s[i:].isdigit():
+                if s[i:].isdigit() and not c == "0":
                     is_digit = True
                     break
-                elif s
                 else:
                     return False
         if is_digit == False:
