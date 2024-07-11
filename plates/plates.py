@@ -12,7 +12,7 @@ def is_valid(s):
         for i, c in enumerate(s, start=2):
             if c.isdigit():
                 is_digit = True
-                if not c == "0" or not s[i:].isdigit():
+                if c == "0" or not s[i:].isdigit():
                    return False
                 break
 
