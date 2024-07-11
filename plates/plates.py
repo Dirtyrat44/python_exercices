@@ -18,8 +18,8 @@ def is_valid(s):
 
         if not is_digit:
             return True
-        else:
-            return is_digit
+
+        return is_digit
     else:
         return False
 
