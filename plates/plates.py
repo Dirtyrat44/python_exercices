@@ -14,6 +14,7 @@ def is_valid(s):
                 if s[i:].isdigit():
                     is_digit = True
                     break
+                elif s
                 else:
                     return False
         if is_digit == False:
