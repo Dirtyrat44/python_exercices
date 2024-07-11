@@ -22,9 +22,13 @@ fruits_calories = {
     "watermelon": 80
 }
 
+def calories(t):
+    if t in fruits_calories:
+        return fruits_calories[t]
+
 def main():
     user_input = input("Item: ")
-    print(f"Calories: {fruits_calories[names]}")
+    print("Calories:", calories(user_input.lower()))
 
 
 
