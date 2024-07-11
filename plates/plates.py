@@ -16,6 +16,13 @@ def is_valid(s):
                    return False
             break
 
+        if not is_digit:
+            return True
+        else:
+            return is_digit
+    else:
+        return False
+
 
 
 
