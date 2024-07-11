@@ -30,7 +30,10 @@ def calories(t):
 
 def main():
     user_input = input("Item: ")
-    print("Calories:", calories(user_input.lower()))
+    if user_input in fruits_calories:
+        print("Calories:", calories(user_input.lower()))
+    else:
+        pass
 
 
 
