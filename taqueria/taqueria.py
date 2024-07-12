@@ -11,7 +11,7 @@ menu = {
 }
 
 def main():
-    input
+    user_input = input("Item: ").title()
 
 
 
