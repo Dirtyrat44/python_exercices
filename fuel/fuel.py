@@ -10,7 +10,7 @@ def main():
 
 
 
-def fuel_gauge(t):
+def extract_fractions(t):
     try:
         n1, n2 = t.split("/")
     except:
