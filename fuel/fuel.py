@@ -4,20 +4,22 @@ def main():
         if user_input.isalpha():
             pass
         else:
-            extract_fractions(user_input)
+            convert_and_return(user_input)
             break
 
 
 
 
-def extract_fractions(str):
+def convert_and_return(str):
     while True:
         try:
             n1, n2 = str.split("/")
         except:
-            return
+            
         else:
-            return convert_int(n1), convert_int(n2)
+            n1 = convert_int(n1)
+            n2 = convert_int(n2)
+            break
 
 
 
