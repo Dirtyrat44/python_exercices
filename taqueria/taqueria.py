@@ -13,14 +13,19 @@ menu = {
 def main():
     total = 0
     while True:
-        user_input = input("Item: ").title()
-        if user_input in menu:
-            total += menu[user_input]
-            print(f"${total:.2f}")
-            
-
+        try:
+            user_input = input("Item: ").title()
+        except EOFError:
+            print()
+            break
         else:
-            pass
+            if user_input in menu:
+                total += menu[user_input]
+                print(f"${total:.2f}")
+
+
+            else:
+                pass
 
 
 main()
