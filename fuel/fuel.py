@@ -11,10 +11,13 @@ def main():
             else:
                 if percentage == 100 or 99:
                     print("F")
+                    break
                 elif percentage == 1 or 0:
                     print("E")
+                    break
                 else:
                     print(f"{percentage}%")
+                    break
 
 
 
