@@ -13,10 +13,13 @@ def main():
 
 def convert_to_percentage(s):
     numerator, denominator = map(int, s.split("/"))
-    try:
-        return round((numerator / denominator) * 100)
-    except ZeroDivisionError:
+    if numerator > denominator:
         return None
+    else:
+        try:
+            return round((numerator / denominator) * 100)
+        except ZeroDivisionError:
+            return None
 
 
 
