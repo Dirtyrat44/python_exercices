@@ -1,7 +1,10 @@
 def main():
     while True:
         user_input = ("Fraction: ")
-        if user
+        if user_input.isalpha():
+            return True
+        else:
+            break
 
 
 
