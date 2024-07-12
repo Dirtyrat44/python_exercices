@@ -14,17 +14,13 @@ def main():
     total = 0
     while True:
         user_input = input("Item: ").title()
-        if user_input in {menu}:
+        if user_input in menu:
+            total += menu[user_input]
             print(f"${total:.2f}")
-            total += user_input
+            
 
         else:
             pass
-
-
-
-
-def total(n):
 
 
 main()
