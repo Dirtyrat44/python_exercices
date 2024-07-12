@@ -11,12 +11,18 @@ menu = {
 }
 
 def main():
-    user_input = input("Item: ").title()
+    while True:
+        user_input = input("Item: ").title()
+        if user_input in {menu}:
+            
+
+        else:
+            pass
 
 
 
 
-
+def total(n):
 
 
 main()
