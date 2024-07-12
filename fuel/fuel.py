@@ -1,8 +1,7 @@
 def main():
     user_input = input("Fraction: ")
 
-    print(fuel_gauge(user_input))
-
+    print()
 
 
 
