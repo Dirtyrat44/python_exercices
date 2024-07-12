@@ -5,11 +5,16 @@ def main():
             pass
         else:
             try:
-                convert_and_return(user_input)
+                percentage = convert_and_return(user_input)
             except:
                 pass
             else:
-                print()
+                if percentage == 100 or 99:
+                    print("F")
+                elif percentage == 1 or 0:
+                    print("E")
+                else:
+                    print(f"{percentage}%")
 
 
 
