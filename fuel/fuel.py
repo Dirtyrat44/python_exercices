@@ -17,8 +17,8 @@ def extract_fractions(str):
         except:
             return
         else:
-            n1 = convert_int(n1)
-            n2 = convert_int(n2)
+            return convert_int(n1), convert_int(n2)
+
 
 
 
