@@ -21,7 +21,7 @@ def convert_to_percentage(s):
 
 
 def format_response(n):
-    if n in [98, 100]:
+    if n in [99, 100]:
         return "F"
     elif n in [0, 1]:
         return "E"
