@@ -1,5 +1,5 @@
 def main():
-    user_input = input = ("Fraction: ")
+    user_input = input("Fraction: ")
 
     print(fuel_gauge(user_input), "%", SEP="")
 
