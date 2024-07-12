@@ -39,11 +39,11 @@ def convert_and_return(str):
             else:
                 pass
 
-
+        
         try:
             n1 / n2
         except ZeroDivisionError:
-            break
+            pass
         else:
             return round((n1 / n2) * 100)
 
