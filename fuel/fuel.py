@@ -4,8 +4,12 @@ def main():
         if user_input.isalpha():
             pass
         else:
-            convert_and_return(user_input)
-            break
+            try:
+                convert_and_return(user_input)
+            except:
+                pass
+            else:
+                print()
 
 
 
