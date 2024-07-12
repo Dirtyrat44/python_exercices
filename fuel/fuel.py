@@ -1,6 +1,7 @@
 def main():
-
-    user_input = ("Fraction: ")
+    while True:
+        user_input = ("Fraction: ")
+        if user
 
 
 
