@@ -22,8 +22,6 @@ def main():
             if user_input in menu:
                 total += menu[user_input]
                 print(f"${total:.2f}")
-            else:
-                pass
-
+           
 
 main()
