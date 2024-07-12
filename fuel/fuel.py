@@ -11,7 +11,13 @@ def main():
                 break
 
 
-def convert_to_percentage(n):
+def convert_to_percentage(s):
+    numerator, denominator = map(int, s.split("/"))
+    try:
+        return round((numerator / denominator) * 100)
+    except ZeroDivisionError:
+        return None
+
 
 
 def format_response(n):
