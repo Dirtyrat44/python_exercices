@@ -1,12 +1,17 @@
 def main():
     user_input = input("Fraction: ")
 
-    print(fuel_gauge(user_input), "%", SEP="")
+    print(fuel_gauge(user_input), "%", sep="")
 
 
 
 def fuel_gauge(t):
-    n1, n2 = t.split("/", 1)
+    try:
+        n1, n2 = t.split("/")
+    except:
+        pass
+    else:
+        n1, n2 = t.split("/")
     n1 = convert_int(n1)
     n2 = convert_int(n2)
     while True:
@@ -14,17 +19,19 @@ def fuel_gauge(t):
             n1 / n2
         except ZeroDivisionError:
             print("You cannot divide by zero")
+            break
         else:
             return ((n1 / n2) * 100)
 
 def convert_int(n):
     while True:
         try:
-            int(n)
+            n = int(n)
         except ValueError:
             print(f"'{n}' is not an intenger")
+            break
         else:
-            return int(n)
+            return n
 
 
 
