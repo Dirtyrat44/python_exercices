@@ -1,5 +1,5 @@
 def main():
-    user_input = input("Fraction: ")
+    extract_fractions()
 
     print()
 
@@ -9,14 +9,16 @@ def main():
 
 
 
-def extract_fractions(t):
-    try:
-        n1, n2 = t.split("/")
-    except:
-        return
-    else:
-        n1 = convert_int(n1)
-        n2 = convert_int(n2)
+def extract_fractions():
+    while True:
+        try:
+            user_input = input("Fraction: ")
+            n1, n2 = user_input.split("/")
+        except:
+            return
+        else:
+            n1 = convert_int(n1)
+            n2 = convert_int(n2)
 
 
 
