@@ -21,8 +21,14 @@ def convert_and_return(str):
         except:
             return
         else:
-            n1 = convert_int(n1)
-            n2 = convert_int(n2)
+            try:
+                n1 = int(n1)
+                n2 = int(n2)
+            except ValueError:
+                return
+            else:
+                pass
+
 
         try:
             n1 / n2
