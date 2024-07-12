@@ -6,6 +6,7 @@ def main():
 
 
 def fuel_gauge(t):
+    t.split("/", 1)
 
 
 
