@@ -7,11 +7,11 @@ def main():
 
 def fuel_gauge(t):
     n1, n2 = t.split("/", 1)
-    # n1 = convert_int(n1)
-    # n2 = convert_int(n2)
+    n1 = convert_int(n1)
+    n2 = convert_int(n2)
     while True:
         try:
-            convert_int(n1) / convert_int(n2)
+            n1 / n2
         except ZeroDivisionError:
             print("You cannot divide by zero")
         else:
