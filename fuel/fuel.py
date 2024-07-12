@@ -9,10 +9,10 @@ def main():
             except:
                 pass
             else:
-                if percentage == 100 or 99:
+                if percentage == 100 or percentage == 99:
                     print("F")
                     break
-                elif percentage == 1 or 0:
+                elif percentage == 1 or percentage == 0:
                     print("E")
                     break
                 else:
