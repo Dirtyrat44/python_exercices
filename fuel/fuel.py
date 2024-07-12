@@ -61,20 +61,3 @@ main()
 
 
 
-
-
-
-
-def convert_int(n):
-    while True:
-        try:
-            n = int(n)
-        except ValueError:
-            print(f"'{n}' is not an intenger")
-            break
-        else:
-            return n
-
-
-
-
