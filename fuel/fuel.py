@@ -1,68 +1,25 @@
 def main():
     while True:
         user_input = input("Fraction: ")
-        if user_input.isalpha():
-            pass
-        else:
+        if user_input.replace("/", "").isdigit() and "/" in user_input:
             try:
-                percentage = convert_and_return(user_input)
-            except:
-                pass
-            else:
-                if percentage != None:
-                    if percentage == 100 or percentage == 99:
-                        print("F")
-                        break
-                    elif percentage == 1 or percentage == 0:
-                        print("E")
-                        break
-                    elif 0 < percentage < 99:
-                        print(f"{percentage}%")
-                        break
-                    else:
-                        pass
-                else:
-                    pass
-
-
-
-
-def convert_and_return(str):
-    while True:
-        try:
-            n1, n2 = str.split("/")
-        except:
-            return
-        else:
-            try:
-                n1 = int(n1)
-                n2 = int(n2)
+                percentage = convert_to_percentage(user_input)
+                if percentage is not None:
+                    print(format_response(percentage))
+                    break
             except ValueError:
-                pass
-            else:
-                pass
+                break
 
 
-        try:
-            n1 / n2
-        except ZeroDivisionError:
-            return
-        else:
-            return round((n1 / n2) * 100)
+def convert_to_percentage(n):
 
 
-
-
-
-
-
-
-
-
-
-
+def format_response(n):
+    if n in [98, 100]:
+        return "F"
+    elif n in [0, 1]:
+        return "E"
+    else:
+        return f"{n}%"
 
 main()
-
-
-
