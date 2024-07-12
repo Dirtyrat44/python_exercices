@@ -11,17 +11,16 @@ def fuel_gauge(t):
     except:
         return
     else:
-        n1, n2 = t.split("/")
-    n1 = convert_int(n1)
-    n2 = convert_int(n2)
-    while True:
-        try:
-            n1 / n2
-        except ZeroDivisionError:
-            print("You cannot divide by zero")
-            break
-        else:
-            return ((n1 / n2) * 100)
+        n1 = convert_int(n1)
+        n2 = convert_int(n2)
+        while True:
+            try:
+                n1 / n2
+            except ZeroDivisionError:
+                print("You cannot divide by zero")
+                break
+            else:
+                return ((n1 / n2) * 100)
 
 def convert_int(n):
     while True:
