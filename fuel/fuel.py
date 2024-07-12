@@ -15,9 +15,11 @@ def main():
                 elif percentage == 1 or percentage == 0:
                     print("E")
                     break
-                else:
+                elif 0 < percentage < 99:
                     print(f"{percentage}%")
                     break
+                else:
+                    pass
 
 
 
@@ -41,7 +43,7 @@ def convert_and_return(str):
         try:
             n1 / n2
         except ZeroDivisionError:
-            return
+            break
         else:
             return round((n1 / n2) * 100)
 
