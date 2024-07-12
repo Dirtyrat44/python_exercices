@@ -28,7 +28,7 @@ def divide_return_percentage(n1, n2):
                 print("You cannot divide by zero")
 
             else:
-                return ((n1 / n2) * 100)
+                return (round(n1 / n2) * 100)
 
 def convert_int(n):
     while True:
