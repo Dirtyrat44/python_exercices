@@ -1,14 +1,24 @@
 def main():
     while True:
         user_input = input("Fraction: ")
-        if user_input.isalpha() and len(user_input) < 2:
+        if user_input.isalpha():
             pass
         else:
+            extract_fractions(user_input)
             break
 
 
 
 
+def extract_fractions(str):
+    while True:
+        try:
+            n1, n2 = str.split("/")
+        except:
+            return
+        else:
+            n1 = convert_int(n1)
+            n2 = convert_int(n2)
 
 
 
@@ -22,28 +32,6 @@ def main():
 main()
 
 
-
-def main():
-    extract_fractions()
-
-    print()
-
-
-
-
-
-
-
-def extract_fractions():
-    while True:
-        try:
-            user_input = input("Fraction: ")
-            n1, n2 = user_input.split("/")
-        except:
-            return
-        else:
-            n1 = convert_int(n1)
-            n2 = convert_int(n2)
 
 
 
