@@ -24,7 +24,7 @@ def convert_int(n):
         except ValueError:
             print(f"'{n}' is not an intenger")
         else:
-            return n
+            return int(n)
 
 
 
