@@ -18,7 +18,7 @@ def fuel_gauge(t):
                 n1 / n2
             except ZeroDivisionError:
                 print("You cannot divide by zero")
-                break
+                
             else:
                 return ((n1 / n2) * 100)
 
