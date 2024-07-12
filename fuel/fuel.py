@@ -15,7 +15,7 @@ def convert_and_return(str):
         try:
             n1, n2 = str.split("/")
         except:
-            
+            break
         else:
             n1 = convert_int(n1)
             n2 = convert_int(n2)
