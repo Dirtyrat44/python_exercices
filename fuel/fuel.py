@@ -9,7 +9,7 @@ def fuel_gauge(t):
     try:
         n1, n2 = t.split("/")
     except:
-        pass
+        return
     else:
         n1, n2 = t.split("/")
     n1 = convert_int(n1)
