@@ -9,15 +9,18 @@ def main():
             except:
                 pass
             else:
-                if percentage == 100 or percentage == 99:
-                    print("F")
-                    break
-                elif percentage == 1 or percentage == 0:
-                    print("E")
-                    break
-                elif 0 < percentage < 99:
-                    print(f"{percentage}%")
-                    break
+                if percentage != None:
+                    if percentage == 100 or percentage == 99:
+                        print("F")
+                        break
+                    elif percentage == 1 or percentage == 0:
+                        print("E")
+                        break
+                    elif 0 < percentage < 99:
+                        print(f"{percentage}%")
+                        break
+                    else:
+                        pass
                 else:
                     pass
 
@@ -43,7 +46,7 @@ def convert_and_return(str):
         try:
             n1 / n2
         except ZeroDivisionError:
-            pass
+            return
         else:
             return round((n1 / n2) * 100)
 
