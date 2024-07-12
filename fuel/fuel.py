@@ -35,11 +35,11 @@ def convert_and_return(str):
                 n1 = int(n1)
                 n2 = int(n2)
             except ValueError:
-                return
+                pass
             else:
                 pass
 
-        
+
         try:
             n1 / n2
         except ZeroDivisionError:
