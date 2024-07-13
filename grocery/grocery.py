@@ -13,7 +13,7 @@ def main():
         except EOFError:
             sorted_grocery = sorted(grocery)
             for key in sorted_grocery:
-                value = sorted_grocery[key]
+                value = grocery[key]
                 print(f"{value} {key}")
             break
 
