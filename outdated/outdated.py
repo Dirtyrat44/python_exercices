@@ -21,10 +21,10 @@ def main():
             print(f"{year}-{month:02}-{day:02}")
             break
         elif "," in user_input:
-            month, day, year = user_input.replace(",", "").split(" ")
             try:
-                int(day)
-                int(year)
+                month, day, year = user_input.replace(",", "").split(" ")
+                day = int(day)
+                year = int(year)
             except ValueError:
                 pass
             else:
