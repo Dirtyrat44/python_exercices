@@ -22,6 +22,14 @@ def main():
             break
         elif "," in user_input:
             month, day, year = user_input.replace(",", "").split(" ")
+            try:
+                int(day)
+                int(year)
+            except ValueError:
+                pass
+            else:
+                if month in months:
+                    #print month index +1
 
 
 
