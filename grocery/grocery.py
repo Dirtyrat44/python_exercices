@@ -4,8 +4,11 @@ def main():
     while True:
         try:
             user_input = input("").upper()
-            new_entry = {user_input: 1}
-            grocery.update(new_entry)
+            if user_input in grocery:
+                grocery[user_input] += 1
+            else:
+                grocery[user_input] = 1
+
 
         except EOFError:
             sorted_grocery = sorted(grocery)
