@@ -9,8 +9,8 @@ def main():
 
         except EOFError:
             sorted_grocery = sorted(grocery)
-            for items, quantity in sorted_grocery.items():
-                print(quantity, items, end=" ")
+            for item, quantity in sorted_grocery.items():
+                print(quantity, item, end=" ")
             break
 
 
