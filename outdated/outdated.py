@@ -30,7 +30,8 @@ def main():
             else:
                 if month in months:
                     #print month index +1
-                    
+                    print(f"{year}-{months.index(month)}-{day:02}")
+
 
         else:
             pass
