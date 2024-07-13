@@ -31,7 +31,7 @@ def main():
             except ValueError:
                 pass
             else:
-                if month < 13 and day < 32:
+                if (months.index(month) + 1) < 13 and day < 32:
                     if month in months:
                         #print month index +1
                         print(f"{year}-{months.index(month) + 1:02}-{day:02}")
