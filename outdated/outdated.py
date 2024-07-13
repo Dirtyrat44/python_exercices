@@ -20,7 +20,8 @@ def main():
             month, day, year = map(int, user_input.replace("/", " ").split(" "))
             print(f"{year}-{month:02}-{day:02}")
             break
-        elif user_input 
+        elif "," in user_input:
+            month, day, year = user_input.replace(",", "").split(" ")
 
 
 
