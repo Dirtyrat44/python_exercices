@@ -30,6 +30,10 @@ def main():
             else:
                 if month in months:
                     #print month index +1
+                    
+
+        else:
+            pass
 
 
 
