@@ -15,7 +15,7 @@ months = [
 
 def main():
     while True:
-        user_input = input("Date: ")
+        user_input = input("Date: ").strip()
         if user_input.replace("/", "").isdigit() and "/" in user_input:
             month, day, year = map(int, user_input.replace("/", " ").split(" "))
             if month < 13 and day < 32:
