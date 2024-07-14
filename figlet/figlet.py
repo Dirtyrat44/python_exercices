@@ -2,7 +2,7 @@ import sys
 from pyfiglet import Figlet
 
 figlet = Figlet()
-figlet_available = figlet.getfonts()
+figlet_available = figlet.getFonts()
 
 
 
