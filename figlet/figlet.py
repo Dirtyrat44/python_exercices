@@ -7,7 +7,13 @@ figlet_available = figlet.getfonts()
 
 
 def main():
-    if len(sys.argv) == 0 or len(sys.argv) == 2:
+    if len(sys.argv) == 0:
+        sys.exit()
+
+
+    elif len(sys.argv) == 2 and sys.argv[1] in ["-f", "--font"] and sys.argv[2] in figlet_available:
+            print()
+
 
 
 
