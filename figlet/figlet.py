@@ -7,7 +7,12 @@ figlet_available = figlet.getfonts()
 
 
 def main():
-    if len(sys.argv)
+    if len(sys.argv) == 0 or len(sys.argv) == 2:
+
+
+
+    else:
+        sys.exit("Invalid usage")
 
 
 
