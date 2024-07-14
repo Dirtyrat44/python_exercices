@@ -7,7 +7,7 @@ figlet_available = figlet.getfonts()
 
 
 def main():
-
+    if len(sys.argv)
 
 
 
