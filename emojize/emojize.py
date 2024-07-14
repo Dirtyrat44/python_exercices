@@ -3,7 +3,8 @@ import emoji
 
 def main():
 
-    print(emoji.emojize("Python is fun :thumbsup:", language="alias"))
+    user_input = input("Input: ")
+    print(emoji.emojize(f"Output: {user_input}", language="alias"))
 
 
 if __name__ == "__main__":
