@@ -1,5 +1,6 @@
 import sys
 from pyfiglet import Figlet
+from random import choice
 
 figlet = Figlet()
 figlet_available = figlet.getFonts()
