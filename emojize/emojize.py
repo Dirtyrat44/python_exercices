@@ -1,7 +1,9 @@
 import emoji
 
 def main():
-    print(emoji.emojize(language='alias'))
+
+    print(emoji.__version__)
+
 
 
 
