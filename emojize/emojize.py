@@ -1,3 +1,5 @@
+import emoji
+
 def main():
     f
 
