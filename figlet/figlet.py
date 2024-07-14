@@ -11,7 +11,7 @@ def main():
         sys.exit()
 
 
-    elif len(sys.argv) == 2 and sys.argv[1] in ["-f", "--font"] and sys.argv[2] in figlet_available:
+    elif len(sys.argv) == 3 and sys.argv[1] in ["-f", "--font"] and sys.argv[2] in figlet_available:
             s = input("Input: ")
             figlet.setFont(font=sys.argv[2])
             print(f"Output: {figlet.renderText(s)}")
