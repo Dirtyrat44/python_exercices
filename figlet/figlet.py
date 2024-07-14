@@ -1,5 +1,9 @@
 import sys
-import pyfiglet
+from pyfiglet import Figlet
+
+figlet = Figlet()
+figlet_available = figlet.getfonts()
+
 
 
 def main():
