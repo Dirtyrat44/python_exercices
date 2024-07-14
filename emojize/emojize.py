@@ -1,20 +1,9 @@
 import emoji
 
+
 def main():
 
-    print(emoji.__version__)
-
-
-
-
-
-
-
-
-
-
-
-
+    print(emoji.emojize("Python is fun :thumbsup:", language="alias"))
 
 
 if __name__ == "__main__":
