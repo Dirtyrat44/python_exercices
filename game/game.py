@@ -7,9 +7,9 @@ def main():
             level = int(input("Level: "))
         except ValueError:
             pass
-        else:
-            if level < 0:
-                pass
+
+        if level >= 0:
+            
 
 
 
