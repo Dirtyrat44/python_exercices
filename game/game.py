@@ -1,8 +1,9 @@
 import random
-
+def get_level(n):
+    
 
 def main():
-
+"""
     while True:
         try:
             level = int(input("Level: "))
@@ -28,6 +29,9 @@ def main():
 
                         else:
                             pass
+"""
+
+
 
 
 
