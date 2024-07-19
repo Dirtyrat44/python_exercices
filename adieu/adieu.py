@@ -1,10 +1,14 @@
 import inflect
 p = inflect.engine()
 def main():
-
+    names = []
     while True:
-        user_input = input("Name: ")
-        names = [user_input]
+        try:
+            user_input = input("Name: ")
+            names.append(user_input)
+        except EOFError:
+            print()
+
 
 
 
