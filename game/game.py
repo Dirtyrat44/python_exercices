@@ -17,9 +17,9 @@ def main():
                         pass
                     else:
                         if guess > 0:
-                            if level < guess:
+                            if guess_number > guess:
                                 print("Too large!")
-                            elif level > guess:
+                            elif guess_number < guess:
                                 print("Too small!")
                             else:
                                 print("Just right!")
