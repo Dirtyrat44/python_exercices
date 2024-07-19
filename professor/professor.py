@@ -11,6 +11,10 @@ def get_level():
             level = int(input("Level: "))
             if level not in [1, 2 ,3]:
                 raise ValueError
+        except ValueError:
+            pass
+        else:
+            return level
 
 
 def generate_integer(level):
