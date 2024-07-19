@@ -7,7 +7,8 @@ def main():
             user_input = input("Name: ")
             names.append(user_input)
         except EOFError:
-            print(p.join(names))
+            print()
+            print(f"Adieu, adieu, to {p.join(names)}")
             break
 
 
