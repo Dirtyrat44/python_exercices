@@ -9,10 +9,11 @@ def main():
         n1, n2 = generate_integer(level), generate_integer(level)
 
         while True:
-            if tries == 3:
-                break
-            
             answer = n1 + n2
+            if tries == 3:
+                print(f"{n1} + {n2} = {answer}")
+                break
+
             try:
                 user_answer = int(input(f"{n1} + {n2} = "))
 
@@ -27,12 +28,11 @@ def main():
                     pass
 
 
-
 def get_level():
     while True:
         try:
             level = int(input("Level: "))
-            if level not in [1, 2 ,3]:
+            if level not in [1, 2, 3]:
                 raise ValueError
         except ValueError:
             pass
@@ -42,10 +42,10 @@ def get_level():
 
 def generate_integer(level):
     if level == 1:
-        return random.randint(0-9)
+        return random.randint(0 - 9)
     else:
         upper_bound = (10**level) - 1
-        lower_bound = 10**(level - 1)
+        lower_bound = 10 ** (level - 1)
         return random.randint(lower_bound, upper_bound)
 
 
