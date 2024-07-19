@@ -1,10 +1,15 @@
+import random
+
 def main():
 
     while True:
         try:
             level = int(input("Level: "))
         except ValueError:
-            break
+            pass
+        else:
+            if level < 0:
+                pass
 
 
 
