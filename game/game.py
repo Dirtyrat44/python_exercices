@@ -1,4 +1,5 @@
-import random
+from random import randint
+
 def get_level():
     while True:
         try:
@@ -9,7 +10,24 @@ def get_level():
             if level > 0:
                 return level
 
+def get_guess():
+    while True:
+        try:
+            guess = int(input("Guess: "))
+        except ValueError:
+            pass
+        else:
+            if guess > 0:
+                return guess
 def main():
+
+    level = get_level()
+    guess_number = randint(1, level)
+
+    while True:
+        
+
+
 """
     while True:
         try:
