@@ -1,8 +1,11 @@
 import inflect
-
+p = inflect.engine()
 def main():
 
-p = inflect.engine()
+    while True:
+        user_input = input("Name: ")
+        names = [user_input]
+
 
 
 
