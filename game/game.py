@@ -1,5 +1,6 @@
 import random
 
+
 def main():
 
     while True:
@@ -27,8 +28,6 @@ def main():
 
                         else:
                             pass
-
-
 
 
 """ def is_guess_true(n_to_find, n):
