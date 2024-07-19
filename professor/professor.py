@@ -2,12 +2,12 @@ import random
 
 
 def main():
-    tries = 0
+
     score = 0
     level = get_level()
     for _ in range(10):
         n1, n2 = generate_integer(level), generate_integer(level)
-
+        tries = 0
         while True:
             answer = n1 + n2
             if tries == 3:
