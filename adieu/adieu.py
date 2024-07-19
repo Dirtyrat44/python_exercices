@@ -1,5 +1,8 @@
 import inflect
+
 p = inflect.engine()
+
+
 def main():
     names = []
     while True:
@@ -10,16 +13,6 @@ def main():
             print()
             print(f"Adieu, adieu, to {p.join(names)}")
             break
-
-
-
-
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
