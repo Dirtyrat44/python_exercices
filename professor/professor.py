@@ -18,8 +18,9 @@ def get_level():
 
 
 def generate_integer(level):
-    upper_bound = (10** level) - 1
-    lower_bound = 10** level
+    upper_bound = (10**level) - 1
+    lower_bound = 10**(level - 1)
+    return random.randint(lower_bound, upper_bound)
 
 
 if __name__ == "__main__":
