@@ -2,15 +2,29 @@ import random
 
 
 def main():
+    tries = 0
+    score = 0
     level = get_level()
     for _ in range(10):
+        n1, n2 = generate_integer(level), generate_integer(level)
+
         while True:
-            n1, n2 = generate_integer(level), generate_integer(level)
+            if tries == 3:
+                break
+            
+            answer = n1 + n2
             try:
                 user_answer = int(input(f"{n1} + {n2} = "))
+
             except ValueError:
                 pass
             else:
+                if user_answer == answer:
+                    score += 1
+                    break
+                else:
+                    tries += 1
+                    pass
 
 
 
