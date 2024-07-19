@@ -16,9 +16,9 @@ def main():
                 except ValueError:
                     pass
                 if guess > 0:
-                    if level > guess:
+                    if level < guess:
                         print("Too large!")
-                    elif level < guess:
+                    elif level > guess:
                         print("Too small!")
                     else:
                         print("Just right!")
