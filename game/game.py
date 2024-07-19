@@ -22,7 +22,7 @@ def main():
                         print("Too small!")
                     else:
                         print("Just right!")
-                        break
+                        return
 
                 else:
                     pass
