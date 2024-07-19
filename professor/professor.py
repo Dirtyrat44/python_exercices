@@ -18,12 +18,14 @@ def main():
                 user_answer = int(input(f"{n1} + {n2} = "))
 
             except ValueError:
-                pass
+                print("EEE")
+
             else:
                 if user_answer == answer:
                     score += 1
                     break
                 else:
+                    print("EEE")
                     tries += 1
                     pass
 
