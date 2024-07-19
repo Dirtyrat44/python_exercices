@@ -25,7 +25,15 @@ def main():
     guess_number = randint(1, level)
 
     while True:
-        
+        guess = get_guess()
+
+        if guess_number > guess:
+            print("Too small!")
+        elif guess_number < guess:
+            print("Too large!")
+        else:
+            print("Just right!")
+            break
 
 
 """
