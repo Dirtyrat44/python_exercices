@@ -30,14 +30,7 @@ def main():
                             pass
 
 
-""" def is_guess_true(n_to_find, n):
-    if n > n_to_find:
-        return "Too large!"
-    elif n < n_to_find:
-        return "Too small!"
-    else:
-        return "Just right!"
-"""
+
 
 if __name__ == "__main__":
     main()
