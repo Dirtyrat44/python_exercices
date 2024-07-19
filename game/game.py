@@ -7,25 +7,25 @@ def main():
             level = int(input("Level: "))
         except ValueError:
             pass
+        else:
+            if level > 0:
+                guess_number = random.randint(1, level)
+                while True:
+                    try:
+                        guess = int(input("Guess: "))
+                    except ValueError:
+                        pass
+                    if guess > 0:
+                        if level < guess:
+                            print("Too large!")
+                        elif level > guess:
+                            print("Too small!")
+                        else:
+                            print("Just right!")
+                            return
 
-        if level > 0:
-            guess_number = random.randint(1, level)
-            while True:
-                try:
-                    guess = int(input("Guess: "))
-                except ValueError:
-                    pass
-                if guess > 0:
-                    if level < guess:
-                        print("Too large!")
-                    elif level > guess:
-                        print("Too small!")
                     else:
-                        print("Just right!")
-                        return
-
-                else:
-                    pass
+                        pass
 
 
 
