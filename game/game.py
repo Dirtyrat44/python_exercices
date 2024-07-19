@@ -8,8 +8,14 @@ def main():
         except ValueError:
             pass
 
-        if level >= 0:
-            
+        if level > 0:
+            guess_number = random.randint(1, level)
+            try:
+                guess = int(input("Guess: "))
+            except ValueError:
+                pass
+            if guess > 0:
+                
 
 
 
