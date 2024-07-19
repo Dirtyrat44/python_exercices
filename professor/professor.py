@@ -42,7 +42,7 @@ def get_level():
 
 def generate_integer(level):
     if level == 1:
-        return random.randint(0 - 9)
+        return random.randint(0, 9)
     else:
         upper_bound = (10**level) - 1
         lower_bound = 10 ** (level - 1)
