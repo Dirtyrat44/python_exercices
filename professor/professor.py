@@ -28,6 +28,7 @@ def main():
                     print("EEE")
                     tries += 1
                     pass
+    print(f"{score}")
 
 
 def get_level():
