@@ -1,6 +1,13 @@
 import random
-def get_level(n):
-    
+def get_level():
+    while True:
+        try:
+            level = int(input("Level: "))
+        except ValueError:
+            pass
+        else:
+            if level > 0:
+                return level
 
 def main():
 """
