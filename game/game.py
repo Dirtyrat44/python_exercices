@@ -16,7 +16,13 @@ def main():
                 except ValueError:
                     pass
                 if guess > 0:
-                    print(is_guess_true(level, guess))
+                    if level > guess:
+                        print("Too large!")
+                    elif level < guess:
+                        print("Too small!")
+                    else:
+                        print("Just right!")
+                        break
 
                 else:
                     pass
@@ -24,13 +30,14 @@ def main():
 
 
 
-def is_guess_true(n_to_find, n):
+""" def is_guess_true(n_to_find, n):
     if n > n_to_find:
         return "Too large!"
     elif n < n_to_find:
         return "Too small!"
     else:
         return "Just right!"
+"""
 
 if __name__ == "__main__":
     main()
