@@ -23,10 +23,8 @@ def get_bitcoin_rate():
 
 
 def bitcoin_value():
-    value = get_bitcoin_rate()
-    value_2 = get_argument()
-    amount = value * value_2
 
+    amount = get_bitcoin_rate() * get_argument()
     return print(f"${amount:,.4f}")
 
 
