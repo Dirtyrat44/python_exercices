@@ -20,6 +20,8 @@ def get_bitcoin_rate():
     o = argument_json.json()
     return o["bpi"]["USD"]["rate_float"]
 
+def
+
 def main():
     rate_float = get_bitcoin_rate()
     argument = get_argument()
