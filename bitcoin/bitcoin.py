@@ -1,5 +1,6 @@
 import sys
 import requests
+import json
 
 
 def get_argument():
@@ -15,7 +16,9 @@ def get_argument():
 
 
 def main():
-    get_argument()
+    argument = get_argument()
+    argument_json = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+    print(argument_json)
 
 
 
