@@ -14,13 +14,15 @@ def get_argument():
     else:
         return sys.argv[1]
 
-
-def main():
+def get_bitcoin_rate():
     argument = get_argument()
     argument_json = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     o = argument_json.json()
+    return rate_float = o["bpi"]["USD"]["rate_float"]
 
-    print(o["bpi"]["USD"]["rate_float"])
+def main():
+    ...
+
 
 
 
