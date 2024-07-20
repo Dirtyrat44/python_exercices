@@ -4,7 +4,7 @@ import json
 
 
 def get_argument():
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 1:
         sys.exit("Missing command-line argument")
 
     try:
