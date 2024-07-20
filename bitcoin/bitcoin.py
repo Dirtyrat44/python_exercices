@@ -20,11 +20,16 @@ def get_bitcoin_rate():
     o = argument_json.json()
     return o["bpi"]["USD"]["rate_float"]
 
-def
+def bitcoin_value():
+    
+    amount = get_bitcoin_rate() * get_argument()
+
+    return print(f"${amount:,.4f}")
+
+
 
 def main():
-    rate_float = get_bitcoin_rate()
-    argument = get_argument()
+   bitcoin_value()
 
 
 
