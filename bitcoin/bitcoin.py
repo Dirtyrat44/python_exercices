@@ -21,8 +21,9 @@ def get_bitcoin_rate():
     return o["bpi"]["USD"]["rate_float"]
 
 def bitcoin_value():
-    
-    amount = get_bitcoin_rate() * get_argument()
+    value = get_bitcoin_rate()
+    value_2 = get_argument()
+    amount = value * value_2
 
     return print(f"${amount:,.4f}")
 
