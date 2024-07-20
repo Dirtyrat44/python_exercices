@@ -1,8 +1,21 @@
 import sys
+import requests
+
+
+def get_argument():
+    if len(sys.argv) != 2:
+        sys.exit("Missing command-line argument")
+
+    try:
+        bitcoin = float(sys.argv[1])
+    except ValueError:
+        sys.exit("Command-line argument is not a number")
+    else:
+        return sys.argv[1]
+
 
 def main():
-    if len(sys.argv != 2):
-        sys.exit()
+    get_argument()
 
 
 
