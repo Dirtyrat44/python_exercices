@@ -18,8 +18,12 @@ def get_argument():
 def main():
     argument = get_argument()
     argument_json = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+    o = argument_json.json()
 
-    print(json.dumps(argument_json.json(), indent=2))
+    for result in o["bpi"]:
+        print(result["rate_float"])
+
+
 
 
 
