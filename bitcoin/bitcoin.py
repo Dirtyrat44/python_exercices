@@ -21,7 +21,7 @@ def main():
     o = argument_json.json()
 
     for result in o["bpi"]:
-        print(result["rate_float"])
+        print(result[f"{rate_float}"])
 
 
 
