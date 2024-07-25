@@ -8,5 +8,5 @@ def vowel_eraser(str):
 
 
 
-
-main()
+if __name__ == "__main__":
+    main()
