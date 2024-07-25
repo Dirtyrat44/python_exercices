@@ -3,7 +3,7 @@ def main():
     print("Output:", shorten(user_input))
 
 # Function to erase any vowels
-def shorten(str):
+def shorten(str="STR?"):
     return "".join([c for c in str if c.lower() not in ["a", "e", "i", "o", "u"]])
 
 
