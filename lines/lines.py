@@ -2,7 +2,7 @@ import sys
 
 
 def main():
-
+    command_argument = sys.argv[1:]
 
 
 
