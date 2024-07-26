@@ -2,7 +2,7 @@ import sys
 
 
 def main():
-    if len(sys.argv) == 1:
+    if len(sys.argv) == 1 and sys.argv[1].endswith(".py"):
         command_argument = sys.argv[1]
 
 
