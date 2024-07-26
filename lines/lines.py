@@ -2,7 +2,8 @@ import sys
 
 
 def main():
-    command_argument = sys.argv[1:]
+    if len(sys.argv) == 1:
+        command_argument = sys.argv[1]
 
 
 
