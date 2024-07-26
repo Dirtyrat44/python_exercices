@@ -1,9 +1,12 @@
 def main():
     plate = input("Plate: ")
-    if is_valid(plate):
-        print("Valid")
-    else:
-        print("Invalid")
+    try:
+        if is_valid(plate):
+            print("Valid")
+        else:
+            print("Invalid")
+    except InvalidPlateError as e:
+        print("Invalid:", e)
 
 
 def is_valid(s):
