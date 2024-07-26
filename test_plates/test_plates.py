@@ -13,7 +13,8 @@ def test_plates_non_alphabetical():
 
 def test_plates_length():
     assert is_valid("CS50") == True
-    assert is_valid("C") == False
+    with pytest.raises(InvalidPlateError):
+        is_valid("C")
     assert is_valid("CSSSS50") == False
 
 def test_plates_number_placement():
