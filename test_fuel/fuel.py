@@ -5,7 +5,7 @@ def main():
             try:
                 percentage = convert(user_input)
                 if percentage is not None:
-                    print(format_response(percentage))
+                    print(gauge(percentage))
                     break
             except ValueError:
                 break
@@ -23,7 +23,7 @@ def convert(s):
 
 
 
-def format_response(n):
+def gauge(n):
     if n in [99, 100]:
         return "F"
     elif n in [0, 1]:
