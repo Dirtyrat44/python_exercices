@@ -5,15 +5,15 @@ def main():
     else:
         print("Invalid")
 
-
 def is_valid(s):
+    
+    if not (1 < len(s) < 7 and s[0:2].isalpha()):
+        return False
 
-    if len(s) < 2 or len(s) > 6:
-        return False
-    if s[0].isalpha() == False or s[1].isalpha() == False:
-        return False
+
     if not s.isalnum():
         return False
+
 
     is_digit = False
     for i, c in enumerate(s):
@@ -24,11 +24,11 @@ def is_valid(s):
                 return False
             break
 
+
     if not is_digit:
         return True
 
     return True
-
 
 if __name__ == "__main__":
     main()
