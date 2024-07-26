@@ -6,14 +6,14 @@ def main():
 
 
 def convert(s):
-    numerator, denominator = map(int, s.split("/"))
-    if numerator > denominator:
-        return None
-    else:
+    while True:
         try:
-            return round((numerator / denominator) * 100)
-        except ZeroDivisionError:
-            return None
+            numerator, denominator = map(int, s.split("/"))
+
+
+
+        return round((numerator / denominator) * 100)
+
 
 
 
