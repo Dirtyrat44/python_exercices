@@ -27,3 +27,4 @@ def gauge(n):
         return f"{n:.0f}%"
 if __name__ == "__main__":
     main()
+    
