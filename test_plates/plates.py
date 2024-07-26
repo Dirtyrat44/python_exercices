@@ -1,21 +1,15 @@
-class InvalidPlateError(Exception):
-    pass
-
 def main():
     plate = input("Plate: ")
-    try:
-        if is_valid(plate):
-            print("Valid")
-        else:
-            print("Invalid")
-    except InvalidPlateError as e:
-        print("Invalid:", e)
+    if is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
 
 
 def is_valid(s):
 
     if not (1 < len(s) < 7 and s[0:2].isalpha()):
-        raise InvalidPlateError
+        return False
 
     if not s.isalnum():
         return False
