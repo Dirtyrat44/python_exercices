@@ -1,3 +1,6 @@
+class InvalidPlateError(Exception):
+    pass
+
 def main():
     plate = input("Plate: ")
     try:

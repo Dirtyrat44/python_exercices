@@ -1,11 +1,14 @@
-from plates import is_valid
+from plates import is_valid, InvalidPlateError
+import pytest
 
 def test_plates():
     assert is_valid("CS50") == True
 
 def test_plates_non_alphabetical():
-    assert is_valid("1AAA") == False
-    assert is_valid("A1AA") == False 
+    with pytest.raises(InvalidPlateError):
+        is_valid("1AAA")
+    with pytest.raises(InvalidPlateError):
+        is_valid("A1AA")
     assert is_valid("AA50") == True
 
 def test_plates_length():
