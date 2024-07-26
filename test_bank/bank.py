@@ -1,9 +1,9 @@
 def main():
     message = input("Greeting: ")
-    print(f"${money(message)}")
+    print(f"${value(message)}")
 
 
-def money(text):
+def value(text):
     text = text.strip().lower().replace(",", " ")
     word = text.split(" ", 1)[0]
     if word == "hello":
