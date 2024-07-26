@@ -3,7 +3,7 @@ import sys
 
 def main():
 
-    if len(sys.argv) == 1 and sys.argv[1].endswith(".py"):
+    if len(sys.argv) == 2 and sys.argv[1].endswith(".py"):
         try:
             command_argument = sys.argv[1]
         except FileNotFoundError:
