@@ -7,7 +7,9 @@ def main():
         try:
             command_argument = sys.argv[1]
         except FileNotFoundError:
-            sys.exit("Not a Python file")
+            sys.exit("File not found")
+    elif not sys.argv[1].endswith(".py"):
+        sys.exit("Not a Python file")
     else:
         sys.exit("Too few command-line arguments")
 
