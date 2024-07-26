@@ -15,7 +15,9 @@ def test_plates_length():
     assert is_valid("CS50") == True
     with pytest.raises(InvalidPlateError):
         is_valid("C")
-    assert is_valid("CSSSS50") == False
+    with pytest.raises(InvalidPlateError):
+        is_valid("CSSSS50")
+    
 
 def test_plates_number_placement():
     assert is_valid("CS50S") == False
