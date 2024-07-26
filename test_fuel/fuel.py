@@ -25,5 +25,5 @@ def gauge(n):
         return "E"
     else:
         return f"{n:.0f}%"
-
-main()
+if __name__ == "__main__":
+    main()
