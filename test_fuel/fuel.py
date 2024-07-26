@@ -15,7 +15,7 @@ def convert(s):
             else:
                 s = input("Fraction: ")
         except (ValueError, ZeroDivisionError):
-            pass
+            s = input("Fraction: ")
 
 
 def gauge(n):
