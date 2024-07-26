@@ -9,7 +9,7 @@ def main():
 def is_valid(s):
 
     if not (1 < len(s) < 7 and s[0:2].isalpha()):
-        return False
+        raise InvalidPlateError
 
     if not s.isalnum():
         return False
