@@ -5,6 +5,7 @@ def test_plates():
 
 def test_plates_non_alphabetical():
     assert is_valid("1AAA") == False
+    assert is_valid("AA50") == True
 
 def test_plates_lenght():
     assert is_valid("CS50") == True
