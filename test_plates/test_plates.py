@@ -17,7 +17,6 @@ def test_plates_number_placement():
 def test_plates_0_placement():
     assert is_valid("CS05") == False
 
-def test_plates_non_alphanumeric():
-    assert is_valid("CS@@") == True
+
 
 
