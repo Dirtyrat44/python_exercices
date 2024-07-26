@@ -14,7 +14,7 @@ def test_plates_lenght():
 def test_plates_number_placement():
     assert is_valid("CS50S") == False
 
-def test_plates():
+def test_plates_0_placement():
     assert is_valid("CS05") == False
 
 
