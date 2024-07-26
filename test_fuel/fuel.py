@@ -9,6 +9,13 @@ def convert(s):
     while True:
         try:
             numerator, denominator = map(int, s.split("/"))
+            f = numerator / denominator
+            if f <= 1:
+               return f * 100
+            else:
+                s = input("Fraction: ")
+        except (ValueError, ZeroDivisionError):
+            pass
 
 
 
