@@ -8,7 +8,7 @@ def test_plates_non_alphabetical():
     assert is_valid("1AAA") == False
     assert is_valid("A1AA") == False
     assert is_valid("AA50") == True
-    assert is_valid("50") == Falsesubmit
+    assert is_valid("50") == False
 
 def test_plates_length():
     assert is_valid("CS50") == True
