@@ -8,3 +8,8 @@ def test_shorten_str():
 def test_shorten_int():
     assert shorten("5") == "5"
     assert shorten("0") == "0"
+
+def test_shorten_capitalize():
+    assert shorten("Twitter") == "Twttr"
+
+
