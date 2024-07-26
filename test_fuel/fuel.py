@@ -24,6 +24,6 @@ def gauge(n):
     elif n in [0, 1]:
         return "E"
     else:
-        return f"{n}%"
+        return f"{n:.0f}%"
 
 main()
