@@ -1,14 +1,8 @@
 def main():
-    while True:
-        user_input = input("Fraction: ")
-        if user_input.replace("/", "").isdigit() and "/" in user_input:
-            try:
-                percentage = convert(user_input)
-                if percentage is not None:
-                    print(gauge(percentage))
-                    break
-            except ValueError:
-                break
+    user_input = input("Fraction: ")
+    converted_fraction = convert(user_input)
+    output = gauge(converted_fraction)
+    print(output)
 
 
 def convert(s):
