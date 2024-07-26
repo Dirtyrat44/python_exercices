@@ -18,12 +18,6 @@ def convert(s):
             pass
 
 
-
-        return round((numerator / denominator) * 100)
-
-
-
-
 def gauge(n):
     if n in [99, 100]:
         return "F"
