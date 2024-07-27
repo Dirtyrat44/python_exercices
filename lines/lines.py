@@ -1,7 +1,7 @@
 import sys
 
 def main():
-    is_argv_ok()
+    print(is_argv_ok())
 
 
 
@@ -14,7 +14,7 @@ def is_argv_ok():
         sys.exit("Not a Python file")
 
     if len(sys.argv) == 2 and sys.argv[1].endswith(".py"):
-        ...
+        return True
 
 if __name__ == "__main__":
     main()
