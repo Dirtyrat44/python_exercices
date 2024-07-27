@@ -1,8 +1,8 @@
 import sys
 
-def main():
-    print(is_argv_ok())
 
+def main():
+    print(line_count(is_argv_ok()))
 
 
 def is_argv_ok():
@@ -14,7 +14,23 @@ def is_argv_ok():
         sys.exit("Not a Python file")
 
     if len(sys.argv) == 2 and sys.argv[1].endswith(".py"):
-        return True
+        return sys.argv[1]
+
+
+def line_count(file_py):
+    count = 0
+    try:
+        with open(file_py, "r") as file:
+            for line in file:
+                line = line.rstrip()
+                if line:
+                    count += 1
+    except FileNotFoundError:
+        sys.exit("File does not exist")
+
+    else:
+        return count
+
 
 if __name__ == "__main__":
     main()
