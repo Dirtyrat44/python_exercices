@@ -23,7 +23,7 @@ def line_count(file_py):
         with open(file_py, "r") as file:
             for line in file:
                 line = line.rstrip()
-                if line and line not in [" ", "#"]:
+                if line and not line.startswith("#"):
                     count += 1
     except FileNotFoundError:
         sys.exit("File does not exist")
