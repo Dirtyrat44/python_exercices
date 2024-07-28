@@ -17,10 +17,10 @@ def check_arguments():
         sys.exit("Too many command-line arguments")
     elif len(sys.argv) < 3:
         sys.exit("Too few command-line arguments")
-    elif len(sys.argv) == 3 and not sys.argv[1].endswith(".csv"):
+    elif len(sys.argv) == 3 and not sys.argv[1].endswith(".csv") or not sys.argv[2].endswith(".csv"):
         sys.exit("Not a CSV file")
 
-    if len(sys.argv) == 3 and sys.argv[1].endswith(".csv"):
+    if len(sys.argv) == 3 and sys.argv[1].endswith(".csv") and sys.argv[2].endswith(".csv"):
         return sys.argv[1] and sys.argv[2]
 
 if __name__ == "__main__":
