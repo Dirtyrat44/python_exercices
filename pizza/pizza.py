@@ -6,9 +6,7 @@ def main():
     argument = check_argument()
     with open(argument) as file:
         reader = csv.DictReader(file)
-        for row in reader:
-            table = row
-            print(tabulate(table))
+        print(tabulate(reader))
 
 
 
