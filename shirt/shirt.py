@@ -4,7 +4,9 @@ import PIL
 
 def main():
     input_file, outpufile = check_arguments()
-    with PIL.Image.open()
+    with PIL.Image.open(input_file) as img:
+        print(img.format)
+        print(img.size)
 
 
 def check_arguments():
