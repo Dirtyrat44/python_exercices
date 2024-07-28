@@ -19,7 +19,7 @@ def main():
                     }
                 )
     except FileNotFoundError:
-        sys.exit("File not found")
+        sys.exit(f"Could not read {sys.argv[1]}")
 
 
 
