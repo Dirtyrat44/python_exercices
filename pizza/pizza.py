@@ -4,9 +4,13 @@ import csv
 
 def main():
     argument = check_argument()
-    with open(argument) as file:
-        reader = csv.DictReader(file)
-        print(tabulate(reader, headers="firstrow"))
+    try:
+        with open(argument) as file:
+            reader = csv.DictReader(file)
+            data = list(reader)
+            print(tabulate(data, headers="keys", tablefmt="grid"))
+    except FileNotFoundError:
+        sys.exit("Not a CSV file")
 
 
 
