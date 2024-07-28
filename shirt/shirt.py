@@ -1,10 +1,10 @@
 import sys
 import os
-import PIL
+from PIL import Image
 
 def main():
     input_file, outpufile = check_arguments()
-    with PIL.Image.open(input_file) as img:
+    with Image.open(input_file) as img:
         print(img.format)
         print(img.size)
 
