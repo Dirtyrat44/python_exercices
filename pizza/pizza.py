@@ -7,7 +7,7 @@ def main():
     with open(argument) as file:
         reader = csv.DictReader(file)
         for row in reader:
-            print(row)
+            print(tabulate())
 
 
 
