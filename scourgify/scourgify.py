@@ -10,7 +10,7 @@ def main():
             writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
             writer.writeheader()
             for row in  reader:
-                last, first = row["name"].split(",")
+                last, first = row["name"].split(", ")
                 writer.writerow(
                     {
                         "first": first,
