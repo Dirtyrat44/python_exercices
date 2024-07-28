@@ -9,6 +9,8 @@ def main():
         writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
         writer.writeheader()
 
+        
+
 
 
 
