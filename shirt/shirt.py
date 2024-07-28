@@ -2,6 +2,7 @@ import sys
 import os
 from PIL import Image, ImageOps
 
+
 def main():
     input_file, output_file = check_arguments()
     try:
