@@ -2,12 +2,13 @@ import sys
 
 
 def main():
-    print(check_argument())
+    argument = check_argument()
 
 
 
 
 
+# check if argument is valid
 def check_argument():
     if len(sys.argv) > 2:
         sys.exit("Too many command-line arguments")
