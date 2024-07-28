@@ -1,8 +1,10 @@
 import sys
 import os
+import PIL
 
-
-def main(): ...
+def main():
+    input_file, outpufile = check_arguments()
+    with PIL.Image.open()
 
 
 def check_arguments():
