@@ -4,7 +4,8 @@ from tabulate import tabulate
 def main():
     argument = check_argument()
     with open(argument) as file:
-        
+        for row in file:
+            print(row)
 
 
 
