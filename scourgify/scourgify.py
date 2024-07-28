@@ -10,7 +10,13 @@ def main():
         writer.writeheader()
         for row in  reader:
             last, first = row["name"].split(",")
-            
+            writer.writerow(
+                {
+                    "first": first,
+                    "last": last,
+                    "house": row["house"]
+                }
+            )
 
 
 
