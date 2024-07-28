@@ -21,7 +21,7 @@ def check_arguments():
         sys.exit("Not a CSV file")
 
     if len(sys.argv) == 3 and sys.argv[1].endswith(".csv") and sys.argv[2].endswith(".csv"):
-        return sys.argv[1] and sys.argv[2]
+        return sys.argv[1], sys.argv[2]
 
 if __name__ == "__main__":
     main()
