@@ -1,1 +1,12 @@
-get https://cs50.harvard.edu/python/2022/psets/6/shirt/shirt.png
+def main():
+    ...
+
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
