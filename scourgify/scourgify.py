@@ -7,6 +7,7 @@ def main():
     with open(argument_1) as before, open(argument_2, "w") as after:
         reader = csv.DictReader(before)
         writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
+        writer.writeheader()
 
 
 
