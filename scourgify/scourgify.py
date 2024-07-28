@@ -3,7 +3,9 @@ import sys
 
 
 def main():
-    arguments = check_arguments()
+    argument_1, argument_2 = check_arguments()
+    with open(argument_1) as before, open(argument_2, "w") as after:
+        reader = csv.DictReader(before)
 
 
 
@@ -17,7 +19,7 @@ def check_arguments():
         sys.exit("Not a CSV file")
 
     if len(sys.argv) == 3 and sys.argv[1].endswith(".csv"):
-        return sys.argv[1]
+        return sys.argv[1] and sys.argv[2]
 
 if __name__ == "__main__":
     main()
