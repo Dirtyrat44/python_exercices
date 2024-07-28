@@ -10,7 +10,7 @@ def main():
         writer.writeheader()
         for row in  reader:
             last, first = row["name"].split(",")
-            print(first, last)
+            
 
 
 
