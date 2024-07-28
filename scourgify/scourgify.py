@@ -4,20 +4,22 @@ import sys
 
 def main():
     argument_1, argument_2 = check_arguments()
-    with open(argument_1) as before, open(argument_2, "w") as after:
-        reader = csv.DictReader(before)
-        writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
-        writer.writeheader()
-        for row in  reader:
-            last, first = row["name"].split(",")
-            writer.writerow(
-                {
-                    "first": first,
-                    "last": last,
-                    "house": row["house"]
-                }
-            )
-
+    try:
+        with open(argument_1) as before, open(argument_2, "w") as after:
+            reader = csv.DictReader(before)
+            writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
+            writer.writeheader()
+            for row in  reader:
+                last, first = row["name"].split(",")
+                writer.writerow(
+                    {
+                        "first": first,
+                        "last": last,
+                        "house": row["house"]
+                    }
+                )
+    except FileNotFoundError:
+        sys.exit("File not found")
 
 
 

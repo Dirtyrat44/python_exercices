@@ -12,7 +12,7 @@ def main():
             data = list(reader)
             print(tabulate(data, headers="keys", tablefmt="grid"))
     except FileNotFoundError:
-        sys.exit("Not a CSV file")
+        sys.exit("File not found")
 
 
 # check if argument is valid
