@@ -8,7 +8,7 @@ def main():
         reader = csv.DictReader(before)
         writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
         writer.writeheader()
-        for row in  before:
+        for row in  reader:
             print(row["name"])
 
 
