@@ -6,7 +6,8 @@ def main():
     argument = check_argument()
     with open(argument) as file:
         reader = csv.DictReader(file)
-        print(reader)
+        for row in reader:
+            print(row)
 
 
 
