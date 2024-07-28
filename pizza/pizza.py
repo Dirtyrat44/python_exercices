@@ -1,11 +1,12 @@
 import sys
 from tabulate import tabulate
+import csv
 
 def main():
     argument = check_argument()
     with open(argument) as file:
-        for row in file:
-            print(row)
+        reader = csv.DictReader(file)
+        print(reader)
 
 
 
