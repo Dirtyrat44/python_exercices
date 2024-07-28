@@ -1,1 +1,11 @@
-wget https://cs50.harvard.edu/python/2022/psets/6/scourgify/before.csv
+import csv
+import sys
+
+
+def main():
+
+
+
+
+if __name__ == "__main__":
+    main()
