@@ -1,12 +1,12 @@
 import sys
 import os
-from PIL import Image
+from PIL import Image, ImageOps
 
 def main():
     input_file, outpufile = check_arguments()
     with Image.open(input_file) as img:
-        print(img.format)
-        print(img.size)
+        fitted_image = ImageOps.fit(img, (600, 600))
+        print(fitted_image.size)
 
 
 def check_arguments():
