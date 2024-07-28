@@ -4,10 +4,10 @@ from PIL import Image, ImageOps
 
 def main():
     input_file, outpufile = check_arguments()
-    with Image.open(input_file) as img with Image.open("shirt.png") as img_overlay:
+    with Image.open(input_file) as img, Image.open("shirt.png") as img_overlay:
         fitted_image = ImageOps.fit(img, (600, 600))
-        img_overlay.paste(0, 0)
-        
+        img_overlay.paste(fitted_image, (0, 0))
+
 
 
 def check_arguments():
