@@ -4,11 +4,13 @@ from PIL import Image, ImageOps
 
 def main():
     input_file, output_file = check_arguments()
-    with Image.open(input_file) as img, Image.open("shirt.png") as img_overlay:
-        fitted_image = ImageOps.fit(img, (600, 600))
-        fitted_image.paste(img_overlay, (0, 0), img_overlay)
-        fitted_image.save(output_file)
-
+    try:
+        with Image.open(input_file) as img, Image.open("shirt.png") as img_overlay:
+            fitted_image = ImageOps.fit(img, (600, 600))
+            fitted_image.paste(img_overlay, (0, 0), img_overlay)
+            fitted_image.save(output_file)
+    except FileNotFoundError:
+        sys.exit("File not found")
 
 
 def check_arguments():
