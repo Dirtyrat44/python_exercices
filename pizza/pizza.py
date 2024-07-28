@@ -3,7 +3,8 @@ from tabulate import tabulate
 
 def main():
     argument = check_argument()
-
+    with open(argument) as file:
+        
 
 
 
