@@ -18,8 +18,12 @@ def validate(ip):
         return "False"
 
 def check_number(n):
-    n = int(n)
-    return 0 <= n <= 255
+    try:
+        n = int(n)
+    except ValueError:
+        pass
+    else:
+        return 0 <= n <= 255
 
 
 

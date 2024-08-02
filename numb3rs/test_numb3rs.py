@@ -6,3 +6,7 @@ def test_validate():
 
 def test_check_number():
     assert check_number("1") == True
+
+def test_check_number_alpha():
+    with pytest.raises(ValueError):
+        check_number("cat")
