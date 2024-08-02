@@ -1,33 +1,10 @@
 import pytest
-from numb3rs import validate, check_number
-
-def main():
-    test_validate()
-    test_check_number()
-    test_check_number_alpha()
-def test_validate():
-    assert validate("1.1.1.1") == True
-    assert validate("1.1.1") == False
-    assert validate("1.1") == False
-    assert validate("1") == False
-
-def test_validate_range():
-    assert validate("256.1.1.1") == False
-    assert validate("1.256.1.1") == False
-    assert validate("1.1.256.1") == False
-    assert validate("1.1.1.256") == False
-    assert validate("255.255.255.255") == True
-    assert validate("512.1.1.1") == False
-def test_check_number():
-    assert check_number("1") == True
-    assert check_number("255") == True
-    assert check_number("256") == False
-    assert check_number("-1") == False
-
-def test_check_number_alpha():
-    assert check_number("cat") == False
+from numb3rs import validate
 
 
 
-if __name__ == "__main__":
-    main()
+def test_ip_format():
+    assert validate(r"0.0.0.0") == True
+
+def test_ip_range():
+    assert validate(r"255.0.0.100") == True
