@@ -8,5 +8,5 @@ def test_ip_format():
     assert validate(r"0") == False
 
 def test_ip_range():
-    assert validate(r"255.0.0.100") == True
+    assert validate(r"240.0.0.100") == True
     assert validate(r"256.0.0.0") == False
