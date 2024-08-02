@@ -1,6 +1,10 @@
 import pytest
 from numb3rs import validate, check_number
 
+def main():
+    test_validate()
+    test_check_number()
+    test_check_number_alpha()
 def test_validate():
     assert validate("1.1.1.1") == True
     assert validate("256.256.256.256") == False
@@ -14,3 +18,8 @@ def test_check_number():
 
 def test_check_number_alpha():
     assert check_number("cat") == False
+
+
+
+if __name__ == "__main__":
+    main()
