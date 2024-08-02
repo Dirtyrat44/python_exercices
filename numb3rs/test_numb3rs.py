@@ -11,6 +11,12 @@ def test_validate():
     assert validate("1.1") == False
     assert validate("1") == False
 
+def test_validate_range():
+    assert validate("256.1.1.1") == False
+    assert validate("1.256.1.1") == False
+    assert validate("1.1.256.1") == False
+    assert validate("1.1.1.256") == False
+    assert validate("255.255.255.255") == True
 def test_check_number():
     assert check_number("1") == True
     assert check_number("255") == True
