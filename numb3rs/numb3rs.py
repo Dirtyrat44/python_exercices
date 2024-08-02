@@ -18,7 +18,7 @@ def validate(ip):
         sys.exit("False")
 
 def check_number(n):
-    int(n)
+    n = int(n)
     return 0 <= n <= 255
 
 
