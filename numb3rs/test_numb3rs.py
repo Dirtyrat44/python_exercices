@@ -7,8 +7,9 @@ def main():
     test_check_number_alpha()
 def test_validate():
     assert validate("1.1.1.1") == True
-    assert validate("256.256.256.256") == False
-    assert validate("abc.def.ghi.jkl") == False
+    assert validate("1.1.1") == False
+    assert validate("1.1") == False
+    assert validate("1") == False
 
 def test_check_number():
     assert check_number("1") == True
