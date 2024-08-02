@@ -3,11 +3,15 @@ import sys
 
 
 def main():
-    print(validate(input("IPv4 Address: ")))
+    validate(input("IPv4 Address: "))
 
 
 def validate(ip):
-    ...
+    if re.search(r"^+", ip):
+        sys.exit("True")
+
+    else:
+        sys.exit("False")
 
 
 ...
