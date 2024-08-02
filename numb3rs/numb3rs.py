@@ -21,7 +21,7 @@ def check_number(n):
     try:
         n = int(n)
     except ValueError:
-        pass
+        return None
     else:
         return 0 <= n <= 255
 
