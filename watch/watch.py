@@ -7,7 +7,7 @@ def main():
 
 
 def parse(s):
-    matches = re.search(r"https?", s)
+    matches = re.search(r"https?://(www\.)?", s)
     print(matches)
 
 
