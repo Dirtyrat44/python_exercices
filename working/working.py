@@ -11,7 +11,7 @@ def convert(s):
 
 
 def find_am_pm(s):
-    matches = re.search("^(\b+(AM|PM))", s, re.IGNORECASE)
+    matches = re.search("^(\d+(AM|PM))", s, re.IGNORECASE)
 
 
 if __name__ == "__main__":
