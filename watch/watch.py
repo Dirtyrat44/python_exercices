@@ -10,6 +10,8 @@ def parse(s):
     matches = re.search(r'https?://(?:www\.)?youtube.com/embed/(.+)(?=")', s, re.IGNORECASE)
     if matches:
         return "https://youtu.be/" + matches.group(1)
+    else:
+        return None
 
 
 
