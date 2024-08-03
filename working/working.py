@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    matches = re.search("^((\d+|\d+:\d+)\s+(AM|PM))", s, re.IGNORECASE)
+    matches = re.search("^((\d+:\d+|\d+)\s+(AM|PM))", s, re.IGNORECASE)
     return matches.group(1)
 
 
