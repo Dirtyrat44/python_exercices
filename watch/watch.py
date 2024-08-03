@@ -7,7 +7,7 @@ def main():
 
 
 def parse(s):
-    matches = re.search(r"https?://(www\.)?", s)
+    matches = re.search(r"https?://(www\.)?youtube.com/embed/", s)
     print(matches)
 
 
