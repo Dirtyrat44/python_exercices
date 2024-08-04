@@ -20,6 +20,8 @@ def convert(s):
 
 def convert_to_24_hour(hour, minute, am_pm):
     hour = int(hour)
+    if minute != None:
+        minute = int(minute)
     if am_pm == "AM":
         if int(hour) == 0:
             raise ValueError
