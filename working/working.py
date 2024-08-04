@@ -19,7 +19,8 @@ def convert(s):
 
 
 def convert_to_24_hour(hour, minute, am_pm):
-
+    if am_pm == "AM":
+        if int(hour) == 12
 
 
 if __name__ == "__main__":
