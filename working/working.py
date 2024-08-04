@@ -14,8 +14,18 @@ def convert(s):
 
 
 
-def find_am_pm(n, s):
+def convert_to_24h(time, period):
+    hours, minutes = 0, 0
+    if : in time:
+        hours, minutes = map(int, time.split(":"))
+    else:
+        hours = int(time)
 
+    if period.lower() == "pm" and hours != 12:
+        hours += 12
+    elif period.lower() == "am" and hours == 12:
+        hours = 0
+    return f"{hours:02}:{minutes:02}"
 
 
 
