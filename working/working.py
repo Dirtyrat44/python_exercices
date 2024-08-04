@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    matches = re.search(r"^((\d+:\d+|\d+)\s+(AM|PM))\s+to\s+((\d+:\d+|\d+)\s+(AM|PM))+", s, re.IGNORECASE)
+    matches = re.search(r"^(\d+:\d+|\d+)\s+(AM|PM)\s+to\s+(\d+:\d+|\d+)\s+(AM|PM)$", s, re.IGNORECASE)
     if matches:
         hour_1, am_pm_1, hour_2, am_pm_2 = matches.group(1, 2, 3, 4)
         hour_1_24 = convert_to_24h(hour_1, am_pm_1)
