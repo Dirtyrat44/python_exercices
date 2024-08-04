@@ -16,9 +16,9 @@ def convert(s):
 
 def find_am_pm(n, s):
     if s.lower() == "am":
-        return f"{int(n)} AM"
+        return f"{int(n):02} AM"
     if s.lower() == "pm":
-        return f"{(int(n) + 12)} PM"
+        return f"{(int(n) + 12):02} PM"
 
 
 
