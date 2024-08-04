@@ -8,15 +8,16 @@ def main():
 
 def convert(s):
     matches = re.search(r"^((\d+:\d+|\d+)\s+(AM|PM))\sto\s((\d+:\d+|\d+)\s+(AM|PM))+", s, re.IGNORECASE)
-    return matches.group(4)
+    hour_1, hour_2 = matches.group(2, 3), matches.group(5, 6)
+    return f"{hour_1} to {hour_2}"
 
 
 
-def find_am_pm(s, n):
+def find_am_pm(n, s):
     if s.lower() == "am":
-        return int(n)
+        return f"{int(n)} AM"
     if s.lower() == "pm":
-        return (int(n) + 12)
+        return f"{(int(n) + 12)} PM"
 
 
 
