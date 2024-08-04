@@ -7,7 +7,10 @@ def main():
 
 
 def convert(s):
-    matches = re.search(r"^([0-9][0-2]?):?([0-5][0-9]?)? (AM|PM) to ([0-9][0-2]?):?([0-5][0-9])? (AM|PM)$", s)
+    matches = re.search(
+        r"^([0-9][0-2]?):?([0-5][0-9]?)? (AM|PM) to ([0-9][0-2]?):?([0-5][0-9])? (AM|PM)$",
+        s,
+    )
     if matches:
         hour_1, minute_1, am_pm_1 = matches.group(1, 2, 3)
         hour_2, minute_2, am_pm_2 = matches.group(4, 5, 6)
@@ -44,7 +47,7 @@ def convert_to_24_hour(hour, minute, am_pm):
             else:
                 return f"{hour:02}:{minute:02}"
         else:
-            new_hour = (int(hour) + 12)
+            new_hour = int(hour) + 12
             if minute == None:
                 return f"{new_hour:02}:00"
             else:
