@@ -15,7 +15,7 @@ def convert(s):
 
 
 def convert_to_24_hour():
-    ...
+    
 
 
 if __name__ == "__main__":
