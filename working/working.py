@@ -10,13 +10,14 @@ def convert(s):
     matches = re.search(r"^((\d+:\d+|\d+)\s+(AM|PM))\s+to\s+((\d+:\d+|\d+)\s+(AM|PM))+", s, re.IGNORECASE)
     if matches:
         hour_1, am_pm_1, hour_2, am_pm_2 = matches.group(1, 2, 3, 4)
-        return f"{hour_1} to {hour_2}"
-
+        hour_1_24 = convert_to_24h(hour_1, am_pm_1)
+        hour_2_24 = convert_to_24h(hour_2, am_pm_2)
+        return f"{hour_1_24} to {hour_2_24}"
 
 
 def convert_to_24h(time, period):
     hours, minutes = 0, 0
-    if : in time:
+    if ":" in time:
         hours, minutes = map(int, time.split(":"))
     else:
         hours = int(time)
