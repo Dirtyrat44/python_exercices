@@ -14,7 +14,8 @@ def convert(s):
         raise ValueError
 
 
-...
+def convert_to_24_hour():
+    ...
 
 
 if __name__ == "__main__":
