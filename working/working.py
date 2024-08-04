@@ -23,17 +23,29 @@ def convert_to_24_hour(hour, minute, am_pm):
         if int(hour) == 0:
             raise ValueError
         elif int(hour) == 12:
-            return f"00:{minute}"
+            if minute == None:
+                return f"00:00"
+            else:
+                return f"00:{minute}"
         else:
-            return f"{hour:02}:{minute:02}"
+            if minute == None:
+                return f"{hour:02}:00"
+            else:
+                return f"{hour:02}:{minute:02}"
     else:
         if int(hour) == 0:
             raise ValueError
         elif int(hour) == 12:
-            return f"{hour:02}:{minute:02}"
+            if minute == None:
+                return f"{hour:02}:00"
+            else:
+                return f"{hour:02}:{minute:02}"
         else:
             new_hour = (int(hour) + 12)
-            return f"{new_hour:02}:{minute:02}"
+            if minute == None:
+                return f"{new_hour:02}:00"
+            else:
+                return f"{new_hour:02}:{minute:02}"
 
 
 if __name__ == "__main__":
