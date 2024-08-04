@@ -12,9 +12,12 @@ def convert(s):
 
 
 
-def find_am_pm(s):
+def find_am_pm(s, n):
     if s.lower() == "am":
-        
+        return int(n)
+    if s.lower() == "pm":
+        return (int(n) + 12)
+
 
 
 
