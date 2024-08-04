@@ -9,7 +9,7 @@ def main():
 def convert(s):
     matches = re.search(r"^((\d+:\d+|\d+)\s+(AM|PM))\s+to\s+((\d+:\d+|\d+)\s+(AM|PM))+", s, re.IGNORECASE)
     if matches:
-        hour_1, hour_2 = find_am_pm(2, 3), find_am_pm(5, 6)
+        hour_1, hour_2 = find_am_pm(matches.group(2), matches.group(3)), find_am_pm(matches.group(5), matches.group(6))
         return f"{hour_1} to {hour_2}"
 
 
