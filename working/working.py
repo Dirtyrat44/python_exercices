@@ -13,10 +13,8 @@ def convert(s):
 
 
 def find_am_pm(s):
-    if s == "AM":
-        return True
-    if s == "PM":
-        return False
+    if s.lower() == "am":
+        
 
 
 
