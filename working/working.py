@@ -7,7 +7,11 @@ def main():
 
 
 def convert(s):
-    matches = re.search(r"", s)
+    matches = re.search(r"/^([0-9][0-2]?)(:[0-5][0-9])? (AM|PM) to ([0-9][0-2]?)(:[0-5][0-9])? (AM|PM)$/gm", s)
+    if matches:
+        ...
+    else:
+        raise ValueError
 
 
 ...
