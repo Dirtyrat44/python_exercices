@@ -32,7 +32,7 @@ def convert_to_24_hour(hour, minute, am_pm):
             if minute == None:
                 return f"00:00"
             else:
-                return f"00:{minute}"
+                return f"00:{minute:02}"
         else:
             if minute == None:
                 return f"{hour:02}:00"
