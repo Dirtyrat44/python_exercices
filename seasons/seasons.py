@@ -8,14 +8,14 @@ p = inflect.engine()
 
 
 def main():
-    birth = input("Date of birth: ").split("-")
-    print(convert_date(birth))
+    print(date_input_format())
 
 def time_range(time):
     ...
 
-def convert_date(d):
-    return date(*map(int, d))
+def date_input_format():
+    birth = input("Date of birth: ").split("-")
+    return date(*map(int, birth))
 
 
 if __name__ == "__main__":
