@@ -15,7 +15,7 @@ def time_range(time):
     ...
 
 def convert_date(d):
-    return date(int(d[0]), int(d[1]), int(d[2]))
+    return map(int, date(d[0], d[1], d[2]))
 
 
 if __name__ == "__main__":
