@@ -8,7 +8,8 @@ p = inflect.engine()
 
 
 def main():
-    ...
+    birth = date(1993, 1, 8)
+    print(birth)
 
 
 
