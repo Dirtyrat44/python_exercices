@@ -9,7 +9,6 @@ p = inflect.engine()
 
 def main():
     birth = input("Date of birth: ").split("-")
-
     print(convert_date(birth))
 
 def time_range(time):
