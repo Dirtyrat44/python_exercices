@@ -8,10 +8,15 @@ p = inflect.engine()
 
 
 def main():
-    birth = date(1993, 1, 8)
-    print(date.min)
+    birth = input("Date of birth: ").split("-")
+
+    print(convert_date(birth))
 
 def time_range(time):
+    ...
+
+def convert_date(d):
+    return date(int(d[0]), int(d[1]), int(d[2]))
 
 
 if __name__ == "__main__":
