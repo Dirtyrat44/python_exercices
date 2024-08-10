@@ -9,8 +9,9 @@ p = inflect.engine()
 
 def main():
     birth = date(1993, 1, 8)
-    print(birth)
+    print(date.min)
 
+def time_range(time):
 
 
 if __name__ == "__main__":
