@@ -1,4 +1,7 @@
 from datetime import date
+import inflect  # translate numbers to words
+
+p = inflect.engine()
 
 
 def main():
