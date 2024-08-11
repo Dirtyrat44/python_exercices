@@ -16,8 +16,9 @@ def main():
     print(f"{words.capitalize()} minutes")
 
 
-def check_date_format():
-    birth = input("Date of birth: ").split("-")
+def check_date_format(date_str=None):
+    if date_str == None:
+        birth = input("Date of birth: ").split("-")
     if len(birth) != 3:
         sys.exit("Invalid date")
     year, month, day = birth
