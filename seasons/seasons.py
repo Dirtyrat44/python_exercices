@@ -1,4 +1,5 @@
 from datetime import date
+from datetime import timedelta
 import inflect  # translate numbers to words
 import sys
 
@@ -10,7 +11,7 @@ p = inflect.engine()
 def main():
     user_birth = check_date_format()
     days = date.today() - user_birth
-    print(timedelta.totalseconds(days))
+    print(timedelta.total_seconds(days))
 
 def day_to_minute(days):
     return 1440 * days
