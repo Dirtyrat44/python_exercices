@@ -17,7 +17,11 @@ def check_date_format():
         sys.exit("Invalid date")
     if not 0 < month <= 12:
         sys.exit("Invalid date")
-    if not 
+
+
+    #day bissexstile ou pas
+
+    
 
 def date_input_format():
     return date(*map(int, birth))
