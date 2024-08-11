@@ -9,7 +9,8 @@ p = inflect.engine()
 
 def main():
     print(check_date_format())
-    print 
+    print(date.today())
+    days = check_date_format
 
 
 def check_date_format():
