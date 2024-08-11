@@ -21,7 +21,7 @@ def check_date_format():
 
     #day bissexstile ou pas
 
-    
+    if day in [1, 3, 5, 7, 8, 10, 12]
 
 def date_input_format():
     return date(*map(int, birth))
