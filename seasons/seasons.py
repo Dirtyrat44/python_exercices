@@ -10,8 +10,11 @@ p = inflect.engine()
 
 def main():
     user_birth = check_date_format()
-    days = date.today() - user_birth
-    print(days)
+    days_difference = date.today() - user_birth
+    print(total_days.days())
+
+
+
 def day_to_minute(days):
     return 1440 * days
 
