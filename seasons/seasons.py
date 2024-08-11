@@ -13,7 +13,7 @@ def main():
     days_difference = date.today() - user_birth
     minutes_difference = (lambda x: 1440 * x.days)(days_difference)
     words = p.number_to_words(minutes_difference, andword="")
-    print(words)
+    print(f"{words.capitalize()} minutes")
 
 
 def check_date_format():
