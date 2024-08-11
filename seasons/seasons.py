@@ -1,5 +1,5 @@
 from datetime import date
-from datetime import timedelta
+
 import inflect  # translate numbers to words
 import sys
 
@@ -11,7 +11,9 @@ p = inflect.engine()
 def main():
     user_birth = check_date_format()
     days_difference = date.today() - user_birth
-    print((lambda x: 1440 * x.days)(days_difference))
+    minutes_difference = (lambda x: 1440 * x.days)(days_difference)
+    words = p.number_to_words(minutes_difference, andword="")
+    print(words)
 
 
 def check_date_format():
