@@ -9,16 +9,15 @@ p = inflect.engine()
 
 
 def main():
-    user_birth = check_date_format()
+    user_birth = check_date_format(input("Date of birth: "))
     days_difference = date.today() - user_birth
     minutes_difference = (lambda x: 1440 * x.days)(days_difference)
     words = p.number_to_words(minutes_difference, andword="")
     print(f"{words.capitalize()} minutes")
 
 
-def check_date_format(date_str=None):
-    if date_str == None:
-        birth = input("Date of birth: ").split("-")
+def check_date_format(date_str):
+    birth = date_str.split("-")
     if len(birth) != 3:
         sys.exit("Invalid date")
     year, month, day = birth
