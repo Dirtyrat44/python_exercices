@@ -9,9 +9,13 @@ p = inflect.engine()
 
 def main():
     print(check_date_format())
+    print 
+
 
 def check_date_format():
     birth = input("Date of birth: ").split("-")
+    if len(birth) != 3:
+        sys.exit("Invalid date")
     year, month, day = birth
     if not year.isdigit() and not month.isdigit() and not day.isdigit():
         sys.exit("Invalid date")
@@ -21,8 +25,7 @@ def check_date_format():
     if not 0 < month <= 12:
         sys.exit("Invalid date")
 
-    #day bissexstile ou pas
-
+    # check january month's days
     if month in [1, 3, 5, 7, 8, 10, 12] and not 0 < day <= 31:
         sys.exit("Invalid date")
     if month in [4, 6, 9, 11] and not 0 < day <= 30:
@@ -44,10 +47,6 @@ def check_date_format():
                 sys.exit("Invalid date")
 
     return date(year, month, day)
-
-def date_input_format():
-    ...
-    # return date(*map(int, birth))
 
 
 if __name__ == "__main__":
