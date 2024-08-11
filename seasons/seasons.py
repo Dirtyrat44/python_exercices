@@ -17,9 +17,10 @@ def main():
 
 
 def check_date_format(date_str):
-    birth = date_str.split("-")
+
     if len(birth) != 3:
         sys.exit("Invalid date")
+    birth = date_str.split("-")
     year, month, day = birth
     if not year.isdigit() and not month.isdigit() and not day.isdigit():
         sys.exit("Invalid date")
