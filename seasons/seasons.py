@@ -12,7 +12,7 @@ def main():
 
 def check_date_format():
     birth = input("Date of birth: ").split("-")
-    if not birth.digit():
+    if not birth.isdigit():
     year, month, day = birth
     if not 0 < year <= 9999:
         sys.exit("Invalid date")
