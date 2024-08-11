@@ -15,6 +15,8 @@ def time_range(time):
 
 def date_input_format():
     birth = input("Date of birth: ").split("-")
+    year, month, day = birth
+    if year < date.year
     return date(*map(int, birth))
 
 
