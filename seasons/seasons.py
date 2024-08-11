@@ -27,7 +27,12 @@ def check_date_format():
     if month == 2:
         if year % 2 == 0:
             if year % 100 == 0:
-                ...
+                if year % 400 == 0:
+                    if not 0 < day <= 29:
+                        sys.exit("Invalid date")
+                else:
+                    if not 0 < day <= 28:
+                        sys.exit("Invalid date")
             else:
                 if not 0 < day <= 29:
                     sys.exit("Invalid date")
