@@ -14,8 +14,6 @@ def main():
     print((lambda x: 1440 * x.days)(days_difference))
 
 
-
-
 def check_date_format():
     birth = input("Date of birth: ").split("-")
     if len(birth) != 3:
