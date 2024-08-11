@@ -8,9 +8,8 @@ p = inflect.engine()
 
 
 def main():
-    print(check_date_format())
-    day1 = date.today()
-    days = check_date_format() - day1
+    user_birth = check_date_format()
+    days = date.today() - user_birth
     print(days)
 
 
