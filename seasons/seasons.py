@@ -8,12 +8,14 @@ p = inflect.engine()
 
 
 def main():
-    check_date_format()
+    print(check_date_format())
 
 def check_date_format():
     birth = input("Date of birth: ").split("-")
-    if not birth.isdigit():
     year, month, day = birth
+    if not year.isdigit() and not month.isdigit() and not day.isdigit():
+        sys.exit("Invalid date")
+    year, month, day = int(year), int(month), int(day)
     if not 0 < year <= 9999:
         sys.exit("Invalid date")
     if not 0 < month <= 12:
@@ -40,6 +42,8 @@ def check_date_format():
         else:
             if not 0 < day <= 28:
                 sys.exit("Invalid date")
+
+    return date(year, month, day)
 
 def date_input_format():
     ...
