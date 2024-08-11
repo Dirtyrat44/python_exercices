@@ -10,7 +10,8 @@ p = inflect.engine()
 def main():
     print(check_date_format())
     print(date.today())
-    days = check_date_format
+    days = check_date_format - date.today()
+    print(days)
 
 
 def check_date_format():
@@ -26,11 +27,11 @@ def check_date_format():
     if not 0 < month <= 12:
         sys.exit("Invalid date")
 
-    # check january month's days
     if month in [1, 3, 5, 7, 8, 10, 12] and not 0 < day <= 31:
         sys.exit("Invalid date")
     if month in [4, 6, 9, 11] and not 0 < day <= 30:
         sys.exit("Invalid date")
+    # check january month's days
     if month == 2:
         if year % 2 == 0:
             if year % 100 == 0:
