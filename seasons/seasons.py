@@ -9,8 +9,8 @@ p = inflect.engine()
 
 def main():
     print(check_date_format())
-    print(date.today())
-    days = check_date_format - date.today()
+    day1 = date.today()
+    days = check_date_format() - day1
     print(days)
 
 
