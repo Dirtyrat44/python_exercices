@@ -16,12 +16,14 @@ class PDF(FPDF):
 
 
 def main():
+    user_input = input("Name: ")
     pdf = PDF(format=(210, 297))
     pdf.add_page()
     pdf.image("shirtificate.png", x=15, y=78, w=180, keep_aspect_ratio=True)
     pdf.set_font('helvetica', 'B', 25)
-    pdf.cell(0, 200, 'Arthur Poncin', align='C')
-    pdf.output("test.pdf")
+    pdf.set_text_color(r=255, g=255, b=255)
+    pdf.cell(0, 200, user_input, align='C')
+    pdf.output(f"{user_input}.pdf")
 
 
 
