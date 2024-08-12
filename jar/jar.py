@@ -5,7 +5,7 @@ class Jar:
         self.capacity = capacity
 
     def __str__(self):
-        return f"Your jar capacity is : {self.capacity} and there are : {self._size} cookies inside"
+        return f"Your jar capacity is : {self.capacity} and there are : {size} cookies inside"
 
     def deposit(self, n):
         ...
@@ -29,8 +29,6 @@ class Jar:
         return self._size
     @size.setter
     def size(self, size):
-        if self.size < 1 and self.size > self.capacity:
-            raise ValueError("Your jar capacity can't contains this much cookies")
         self._size = size
 
 def main():
