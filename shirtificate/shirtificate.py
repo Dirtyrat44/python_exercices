@@ -7,7 +7,7 @@ class PDF(FPDF):
         # Setting font: helvetica bold 20
         self.set_font("helvetica", "B", 25)
         # Printing title:
-        self.cell(0, 50, "CS50 Shirtificate", align="C")
+        self.cell(0, 40, "CS50 Shirtificate", align="C")
         # Performing a line break:
         self.ln(20)
     def set_auto_page_break(self, auto, margin=0):
