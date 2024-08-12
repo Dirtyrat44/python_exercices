@@ -17,6 +17,8 @@ class Jar:
 
     @capacity.setter
     def capacity(self, capacity=12):
+        if not capacity.isdigit():
+            raise ValueError("Must be an Int")
         if not capacity >= 0:
             raise ValueError("Invalid capacity")
         self._capacity = capacity
@@ -26,7 +28,7 @@ class Jar:
         ...
 
 def main():
-    user = int(input("?: "))
+    user = input("?: "))
     jar = Jar(user)
     print(jar.capacity)
     print(jar)
