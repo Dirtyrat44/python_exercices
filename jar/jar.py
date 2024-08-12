@@ -26,9 +26,9 @@ class Jar:
 
     @property
     def size(self):
-        if size == 0:
+        if self.size == 0:
             return "There is no cookies in the jar"
-        elif size > 0 and size <= self.capacity:
+        elif self.size > 0 and self.size <= self.capacity:
             return f"there are {self._size}"
 
     @size.setter
