@@ -29,7 +29,7 @@ class Jar:
 
 def main():
     try:
-        user = int(input("?: "))
+        user = int(input("What's the capacity of your cookie jar? "))
     except ValueError:
         sys.exit("Must be an Intenger")
     jar = Jar(user)
