@@ -2,7 +2,8 @@ class Jar:
     def __init__(self, capacity=12):
         self.capacity = capacity
 
-
+    def __str__(self):
+        return f"{self.capacity}"
 
     def deposit(self, n):
         ...
@@ -25,15 +26,8 @@ class Jar:
         ...
 
 def main():
-    jar = Jar(15)
-    print(jar.capacity())
-
-
-if __name__ == "__main__":
-    main()
-
-def main():
-    jar = Jar()
+    user = int(input("?: "))
+    jar = Jar(user)
     print(jar)
 
 if __name__ == "__main__":
