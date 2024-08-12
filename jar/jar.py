@@ -3,7 +3,7 @@ class Jar:
         self.capacity = capacity
 
     def __str__(self):
-        return f"{self.capacity}"
+        return f""
 
     def deposit(self, n):
         ...
@@ -13,7 +13,7 @@ class Jar:
 
     @property
     def capacity(self):
-        return self._capacity
+        return f"The jar capacity is : {self._capacity}"
 
     @capacity.setter
     def capacity(self, capacity=12):
@@ -28,7 +28,7 @@ class Jar:
 def main():
     user = int(input("?: "))
     jar = Jar(user)
-    print(jar)
+    print(jar.capacity)
 
 if __name__ == "__main__":
     main()
