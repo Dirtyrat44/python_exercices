@@ -11,8 +11,8 @@ class PDF(FPDF):
         # Performing a line break:
         self.ln(20)
     def set_auto_page_break(self, auto, margin=0):
-        self.auto = True
-        self.margin = margin
+        self.auto = auto
+        self.b_margin = margin
 
 
 def main():
