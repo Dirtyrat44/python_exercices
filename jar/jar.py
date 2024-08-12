@@ -3,7 +3,7 @@ class Jar:
         self.capacity = capacity
 
     def __str__(self):
-        return f""
+        return f"Cookie monster"
 
     def deposit(self, n):
         ...
@@ -29,6 +29,7 @@ def main():
     user = int(input("?: "))
     jar = Jar(user)
     print(jar.capacity)
+    print(jar)
 
 if __name__ == "__main__":
     main()
