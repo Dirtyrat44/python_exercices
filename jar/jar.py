@@ -1,9 +1,9 @@
 import sys
 
 class Jar:
-    def __init__(self, capacity=12, cookies=0):
+    def __init__(self, capacity=12, size=0):
         self.capacity = capacity
-        self.cookies = cookies
+        self.size = size
 
     def __str__(self):
         return f"Cookie monster"
@@ -26,7 +26,14 @@ class Jar:
 
     @property
     def size(self):
-        return f"There is {self._cookies}"
+        if size == 0:
+            return "There is no cookies in the jar"
+        elif size > 0 and size <= self.capacity:
+            return f"there are {self._size}"
+
+    @size.setter
+    def size(self, size=0):
+        self._size = 0
 
 def main():
     try:
