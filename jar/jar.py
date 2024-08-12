@@ -5,10 +5,10 @@ class Jar:
         self.capacity = capacity
 
     def __str__(self):
-        return f"Your jar capacity is : {self.capacity} and there are : {self.n} cookies inside"
+        return f"Your jar capacity is : {self.capacity} and there are : {self._size} cookies inside"
 
     def deposit(self, n):
-        self.n = n + self.size
+        ...
 
 
     def withdraw(self, n):
