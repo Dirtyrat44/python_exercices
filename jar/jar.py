@@ -12,15 +12,15 @@ class Jar:
     def withdraw(self, n):
         ...
 
+    @property
+    def capacity(self):
+        return self._capacity
+
     @capacity.setter
     def capacity(self, capacity=12):
         if not capacity >= 0:
             raise ValueError("Invalid capacity")
         self._capacity = capacity
-
-    @property
-    def capacity(self):
-        return self._capacity
 
     @property
     def size(self):
@@ -29,6 +29,13 @@ class Jar:
 def main():
     jar = Jar()
 
+
+if __name__ == "__main__":
+    main()
+
+def main():
+    jar = Jar()
+    print(jar)
 
 if __name__ == "__main__":
     main()
