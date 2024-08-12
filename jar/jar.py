@@ -31,7 +31,7 @@ class Jar:
         self._size = size
 
     def __str__(self):
-        return f"🍪"
+        return f"{'🍪' * self.size}"
 def main():
     jar = Jar(15)
     print(jar)
