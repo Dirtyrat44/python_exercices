@@ -31,7 +31,7 @@ class Jar:
         self._size = size
 
     def __str__(self):
-        return f"Your jar capacity is : {self.capacity} and there are : {self.size} cookies inside"
+        return f"Your jar capacity is : {self.capacity} and there are : {(self.size) * 🍪} cookies inside"
 
 def main():
     jar = Jar(15)
