@@ -18,7 +18,7 @@ class PDF(FPDF):
 def main():
     pdf = PDF(format=(210, 297))
     pdf.add_page()
-    pdf.image("shirtificate.png", x=Align.C, y=50, w=180 )
+    pdf.image("shirtificate.png", x=Align.C, y=50, w=180, keep_aspect_ratio=True)
     pdf.set_font('helvetica', 'B', 12)
     pdf.cell(0, 20, 'Powered by FPDF.', align='C')
     pdf.output("test.pdf")
