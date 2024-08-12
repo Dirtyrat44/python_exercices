@@ -12,7 +12,7 @@ class Jar:
     def withdraw(self, n):
         ...
 
-    
+
 
     @property
     def capacity(self):
@@ -23,7 +23,7 @@ class Jar:
         ...
 
 def main():
-    jar = Jar(15)
+    jar = Jar()
     print(jar)
 
 if __name__ == "__main__":
