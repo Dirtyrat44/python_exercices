@@ -10,6 +10,8 @@ class PDF(FPDF):
         self.cell(0, 10, "CS50 Shirtificate", align="C")
         # Performing a line break:
         self.ln(20)
+    def set_auto_page_break(self, auto, margin=0):
+        self.auto = True
 
 
 def main():
