@@ -28,7 +28,7 @@ class Jar:
         ...
 
 def main():
-    user = input("?: "))
+    user = input("?: ")
     jar = Jar(user)
     print(jar.capacity)
     print(jar)
