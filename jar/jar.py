@@ -16,12 +16,13 @@ class Jar:
 
     @property
     def capacity(self):
-        return self.capacity
+        return self._capacity
 
     @capacity.setter
     def capacity(self, capacity=12):
         if not capacity > 0:
             raise ValueError("Invalid capacity")
+        self._capacity = capacity
 
     @property
     def size(self):
