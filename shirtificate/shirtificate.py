@@ -4,12 +4,12 @@ from fpdf import FPDF
 class PDF(FPDF):
     def header(self):
 
-        # Setting font: helvetica bold 16
-        self.set_font("helvetica", "B", 16)
+        # Setting font: helvetica bold 20
+        self.set_font("helvetica", "B", 20)
         # Moving cursor to the right:
         self.cell(80)
         # Printing title:
-        self.cell(30, 10, "CS50 Shirtificate", border=1, align="C")
+        self.cell(30, 10, "CS50 Shirtificate", align="C")
         # Performing a line break:
         self.ln(20)
 
