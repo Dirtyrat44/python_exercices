@@ -3,8 +3,6 @@ class Jar:
         self.capacity = capacity
 
 
-    def __str__(self):
-        ...
 
     def deposit(self, n):
         ...
@@ -27,7 +25,8 @@ class Jar:
         ...
 
 def main():
-    jar = Jar()
+    jar = Jar(15)
+    print(jar.capacity())
 
 
 if __name__ == "__main__":
