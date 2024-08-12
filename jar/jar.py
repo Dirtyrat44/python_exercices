@@ -1,8 +1,9 @@
 import sys
 
 class Jar:
-    def __init__(self, capacity=12):
+    def __init__(self, capacity=12, cookies=0):
         self.capacity = capacity
+        self.cookies = cookies
 
     def __str__(self):
         return f"Cookie monster"
@@ -25,7 +26,7 @@ class Jar:
 
     @property
     def size(self):
-        ...
+        return f"There is {self._cookies}"
 
 def main():
     try:
@@ -35,6 +36,7 @@ def main():
     jar = Jar(user)
     print(jar.capacity)
     print(jar)
+    print(jar.size)
 
 if __name__ == "__main__":
     main()
