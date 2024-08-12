@@ -4,8 +4,6 @@ class Jar:
     def __init__(self, capacity=12):
         self.capacity = capacity
 
-    def __str__(self):
-        return f"Your jar capacity is : {self.capacity} and there are : {size} cookies inside"
 
     def deposit(self, n):
         ...
@@ -31,6 +29,9 @@ class Jar:
     def size(self, size):
         self._size = size
 
+    def __str__(self):
+        return f"Your jar capacity is : {self.capacity} and there are : {self.size} cookies inside"
+    
 def main():
     jar = Jar(15)
     print(jar)
