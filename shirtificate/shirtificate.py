@@ -23,7 +23,7 @@ def main():
     pdf.set_font('helvetica', 'B', 25)
     pdf.set_text_color(r=255, g=255, b=255)
     pdf.cell(0, 200, user_input, align='C')
-    pdf.output(f"{user_input}.pdf")
+    pdf.output("shirtificate.pdf")
 
 
 
