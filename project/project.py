@@ -7,7 +7,6 @@ def main():
     o = response.json()
     print(json.dumps(response.json(), indent=4))
 
-
 def input_check():
     ...
 
