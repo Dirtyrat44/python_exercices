@@ -4,7 +4,9 @@ import json
 
 def main():
     response = requests.get("https://openfarm.cc/api/v1/crops?filter=tomato")
-    print(json.dumps(response.json(), indent=4))
+    o = response.json()
+    for attributes in o["attributes"]:
+        print(attributes)
 
 
 def input_check():
