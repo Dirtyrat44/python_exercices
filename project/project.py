@@ -3,7 +3,7 @@ import re
 import json
 
 def main():
-    response = requests.get("https://openfarm.cc/api/v1/crops?filter=carrot")
+    response = requests.get("https://openfarm.cc/api/v1/crops?filter=vegetable")
     o = response.json()
     print(json.dumps(response.json(), indent=4))
 
